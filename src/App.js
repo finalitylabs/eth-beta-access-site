@@ -10,10 +10,10 @@ class App extends Component {
     return (
       <div className="App">
         <div className="main">
-          <div className="portal">Portal</div>
           <div className="monitor">Monitor
-            <div onClick="" className="btn">PUSH</div>
+            <div onClick="" className="btn"/>
           </div>
+          <div className="portal">Portal</div>
         </div>
         <div className="teaser">
           <div className="bulletin">Bulletin</div>
