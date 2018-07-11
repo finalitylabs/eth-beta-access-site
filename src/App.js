@@ -5,13 +5,15 @@ import './App.css';
 
 
 class App extends Component {
-  
+
   render() {
     return (
       <div className="App">
         <div className="main">
           <div className="portal">Portal</div>
-          <div className="monitor">Monitor</div>
+          <div className="monitor">Monitor
+            <div onClick="" className="btn">PUSH</div>
+          </div>
         </div>
         <div className="teaser">
           <div className="bulletin">Bulletin</div>
