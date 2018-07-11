@@ -5,12 +5,21 @@ import './App.css';
 
 
 class App extends Component {
+  
   render() {
     return (
       <div className="App">
-        <h1>EXTREME TIME HEROES</h1>
-        <h2>FIGHT FOR YOUR TIME</h2>
-        <a href="mailto:team@finalitylabs.com"><h4>team@finalitylabs.com</h4></a>
+        <div className="main">
+          <div className="portal">Portal</div>
+          <div className="monitor">Monitor</div>
+        </div>
+        <div className="teaser">
+          <div className="bulletin">Bulletin</div>
+          <h2>Slogan</h2>
+        </div>
+        
+        <a href="mailto:team@finalitylabs.io"><h4>team@finalitylabs.io</h4></a>
+        
       </div>
     );
   }
