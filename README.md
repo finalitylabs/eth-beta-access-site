@@ -9,6 +9,6 @@ check out [Finality Labs](https://finalitylabs.io)
 
 You can also look through our [Github](https://github.com/finalitylabs)
 
-###To create a development environment
+### To create a development environment
 
 Simply pull, `yarn install` and `yarn start`.
