@@ -65,18 +65,35 @@ html::-webkit-scrollbar-thumb{
   width: 100vw;
   height: 100vh;
   display: flex;
-  
   align-items: center;
   justify-content: space-around;
 }
 
 .portal {
-  width: 45vw;
-  height: 70vh;
+  position: relative;
+  min-width: 600px;
+  height: 500px;
   color: cyan;
-  border: 2px solid cyan;
-  align-self: center;
+}
 
+#portal-animation {
+  position: absolute;
+  width: 1000px;
+  margin-left: -200px;
+  margin-top: -50px;
+}
+
+#catdrop {
+  position: absolute;
+  width: 1000px;
+  margin-left: -200px;
+  margin-top: -50px;
+
+}
+
+#ethdrop {
+  position: absolute;
+  margin-top: -330px;
 }
 
 .monitor {

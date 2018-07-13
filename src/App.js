@@ -1,19 +1,28 @@
 import React, { Component } from 'react';
 
 import './App.css';
+import CatDrop from './components/animations/CatDrop';
+import EthDrop from './components/animations/EthDrop';
+import Portal from './components/animations/Portal';
 
 
 
 class App extends Component {
 
   render() {
+    
     return (
       <div className="App">
         <div className="main">
           <div className="monitor">Monitor
             <div onClick="" className="btn"/>
+            <div onClick="" className="cat-btn"/>
           </div>
-          <div className="portal">Portal</div>
+          <div className="portal">
+            <Portal />
+            <CatDrop />
+            <EthDrop />
+          </div>
         </div>
         <div className="teaser">
           <div className="bulletin">Bulletin</div>
