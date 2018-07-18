@@ -16,9 +16,6 @@ class App extends Component {
         <div className="main">
             <div className="monitor">Monitor</div>
 
-            <div className="cat-btn"/>
-            <div className="eth-btn"/>
-          
             <Portal />
             <CatDrop />
             <EthDrop />

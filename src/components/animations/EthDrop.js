@@ -8,6 +8,7 @@ class EthDrop extends Component {
     this.state = {
       isStopped: true,
       isPaused: false,
+      Animated: 0,
     };
   }
 
@@ -17,16 +18,28 @@ class EthDrop extends Component {
       autoplay: false,
       animationData: animationData
     };
-    const { isStopped, isPaused } = this.state;
+    const { isStopped, isPaused, Animated } = this.state;
+
+    const clickHandler = event => {
+      event.preventDefault();
+      if (!isStopped) {
+        this.setState({ isStopped: true });
+      }
+      this.setState({ isStopped: false });
+      console.log("clicked");
+      this.setState({ Animated: 0 })
+    };
+
     return (
       <div id="ethdrop">
         <Lottie
           options={defaultOptions}
           isStopped={isStopped}
           isPaused={isPaused}
+          Animated={Animated}
           
         />
-        
+        <button onClick={clickHandler} className="eth-btn">ETH</button>
       </div>
     );
   }

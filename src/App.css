@@ -32,6 +32,8 @@ html::-webkit-scrollbar-thumb{
   display: flex;
   flex-direction: column;
   text-align: center;
+
+  z-index: 0;
   
 }
 
@@ -70,6 +72,7 @@ html::-webkit-scrollbar-thumb{
   position: relative;
   width: 100vw;
   height: 100vh;
+  z-index: 1;
 }
 
 
@@ -77,19 +80,21 @@ html::-webkit-scrollbar-thumb{
   position: absolute;
   width: 1px;
   margin-left: 450px;
+
 }
 
 #catdrop {
   position: absolute;
   width: 1000px;
   margin-left: 450px;
+  z-index: 5;
 }
 
 #ethdrop {
   position: absolute;
   width: 1000px;
   margin-left: 450px;
-
+  z-index: 4;
 }
 
 .monitor {
@@ -125,8 +130,8 @@ html::-webkit-scrollbar-thumb{
   background: cyan;
   width: 40px;
   height: 20px;
-  margin-left: 300px;
-  margin-top: 400px;
+  margin-top: -200px;
+  margin-left: -400px;
   cursor: pointer;
 }
 
@@ -135,8 +140,8 @@ html::-webkit-scrollbar-thumb{
   background: magenta;
   width: 40px;
   height: 20px;
-  margin-left: 450px;
-  margin-top: 450px;
+  margin-top: -200px;
+  margin-left: -600px;
   cursor: pointer;
 }
 

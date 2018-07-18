@@ -39,7 +39,7 @@ class CatDrop extends Component {
           Animated={Animated}
          
         />
-        <button onClick={clickHandler}>drop cat</button>
+        <button onClick={clickHandler} className="cat-btn">CAT</button>
       </div>
     );
   }
