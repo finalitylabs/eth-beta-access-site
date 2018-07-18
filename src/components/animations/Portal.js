@@ -26,7 +26,7 @@ class Portal extends Component {
                     options={defaultOptions}
                     isStopped={isStopped}
                     isPaused={isPaused}
-                
+                    width='1000px'
                 />
             </div>
         );

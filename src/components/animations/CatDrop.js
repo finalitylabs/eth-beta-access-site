@@ -8,9 +8,7 @@ class CatDrop extends Component {
     this.state = {
       isStopped: true,
       isPaused: false,
-      speed: 1,
-      direction: 1,
-      isClicked: false
+      Animated: 0,
     };
   }
 
@@ -20,7 +18,7 @@ class CatDrop extends Component {
       autoplay: false,
       animationData: animationData
     };
-    const { isStopped, isPaused, speed } = this.state;
+    const { isStopped, isPaused, Animated } = this.state;
 
     const clickHandler = event => {
       event.preventDefault();
@@ -29,6 +27,7 @@ class CatDrop extends Component {
       }
       this.setState({ isStopped: false });
       console.log("clicked");
+      this.setState({ Animated: 0 })
     };
     return (
       <div id="catdrop">
@@ -36,8 +35,8 @@ class CatDrop extends Component {
           options={defaultOptions}
           isStopped={isStopped}
           isPaused={isPaused}
-          speed={speed}
           width='100%'
+          Animated={Animated}
          
         />
         <button onClick={clickHandler}>drop cat</button>

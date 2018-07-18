@@ -14,15 +14,14 @@ class App extends Component {
     return (
       <div className="App">
         <div className="main">
-          <div className="monitor">Monitor
-            <div onClick="" className="btn"/>
-            <div onClick="" className="cat-btn"/>
-          </div>
-          <div className="portal">
+            <div className="monitor" />
+
+            <div className="cat-btn"/>
+          
             <Portal />
             <CatDrop />
             <EthDrop />
-          </div>
+          
         </div>
         <div className="teaser">
           <div className="bulletin">Bulletin</div>
