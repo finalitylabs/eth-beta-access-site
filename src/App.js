@@ -5,10 +5,8 @@ import CatDrop from './components/animations/CatDrop';
 import EthDrop from './components/animations/EthDrop';
 import Portal from './components/animations/Portal';
 
-
 import Bulletin from './components/Bulletin';
-
-
+import CatPopup from './components/CatPopup';
 
 class App extends Component {
 
@@ -17,11 +15,15 @@ class App extends Component {
     return (
       <div className="App">
         <div className="main">
+
             <div className="monitor">Monitor</div>
+            <CatPopup />
             <div className="screen"/>
+            <div className="cat-popup-btn"/>
             <Portal />
             <CatDrop />
             <EthDrop />
+            
           
         </div>
         <div className="teaser">
