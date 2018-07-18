@@ -6,6 +6,9 @@ import EthDrop from './components/animations/EthDrop';
 import Portal from './components/animations/Portal';
 
 
+import Bulletin from './components/Bulletin';
+
+
 
 class App extends Component {
 
@@ -22,12 +25,9 @@ class App extends Component {
           
         </div>
         <div className="teaser">
-          <div className="bulletin">Bulletin</div>
-          <h2>Slogan</h2>
+          <Bulletin />
+          <a href="mailto:team@finalitylabs.io"><h4>team@finalitylabs.io</h4></a>
         </div>
-        
-        <a href="mailto:team@finalitylabs.io"><h4>team@finalitylabs.io</h4></a>
-        
       </div>
     );
   }

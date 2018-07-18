@@ -119,6 +119,7 @@ html::-webkit-scrollbar-thumb{
 }
 
 .bulletin {
+  position: relative;
   width: 800px;
   height: 500px;
   color: cyan;
@@ -128,6 +129,7 @@ html::-webkit-scrollbar-thumb{
 .cat-btn {
   position: absolute;
   background: cyan;
+  border: none;
   width: 40px;
   height: 20px;
   margin-top: -200px;
@@ -138,6 +140,8 @@ html::-webkit-scrollbar-thumb{
 .eth-btn {
   position: absolute;
   background: magenta;
+  border: none;
+
   width: 40px;
   height: 20px;
   margin-top: -200px;
