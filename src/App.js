@@ -14,9 +14,10 @@ class App extends Component {
     return (
       <div className="App">
         <div className="main">
-            <div className="monitor" />
+            <div className="monitor">Monitor</div>
 
             <div className="cat-btn"/>
+            <div className="eth-btn"/>
           
             <Portal />
             <CatDrop />

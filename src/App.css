@@ -120,5 +120,25 @@ html::-webkit-scrollbar-thumb{
   border: 2px solid cyan;
 }
 
+.cat-btn {
+  position: absolute;
+  background: cyan;
+  width: 40px;
+  height: 20px;
+  margin-left: 300px;
+  margin-top: 400px;
+  cursor: pointer;
+}
+
+.eth-btn {
+  position: absolute;
+  background: magenta;
+  width: 40px;
+  height: 20px;
+  margin-left: 450px;
+  margin-top: 450px;
+  cursor: pointer;
+}
+
 
 
