@@ -18,7 +18,7 @@ class App extends Component {
       <div className="App">
         <div className="main">
             <div className="monitor">Monitor</div>
-
+            <div className="screen"/>
             <Portal />
             <CatDrop />
             <EthDrop />

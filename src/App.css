@@ -87,14 +87,14 @@ html::-webkit-scrollbar-thumb{
   position: absolute;
   width: 1000px;
   margin-left: 450px;
-  z-index: 5;
+
 }
 
 #ethdrop {
   position: absolute;
   width: 1000px;
   margin-left: 450px;
-  z-index: 4;
+ 
 }
 
 .monitor {
@@ -135,18 +135,32 @@ html::-webkit-scrollbar-thumb{
   margin-top: -200px;
   margin-left: -400px;
   cursor: pointer;
+  z-index: 7;
 }
 
 .eth-btn {
   position: absolute;
   background: magenta;
   border: none;
-
   width: 40px;
   height: 20px;
   margin-top: -200px;
   margin-left: -600px;
   cursor: pointer;
+  z-index: 7;
+}
+
+.eth-btn:focus, .cat-btn:focus {
+  outline: 0;
+}
+
+.screen {
+  position: absolute;
+  width: 1000%;
+  height: 1000%;
+  overflow: hidden;
+
+  z-index: 6;
 }
 
 
