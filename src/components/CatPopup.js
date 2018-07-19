@@ -9,6 +9,6 @@ export default () => (
     modal
     closeOnDocumentClick
   >
-    <span> This is where the Kitties List appears </span>
+    <span> Kitties list populates here </span>
   </Popup>
 );
