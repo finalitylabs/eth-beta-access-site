@@ -18,11 +18,11 @@ body::-webkit-scrollbar-track{
 
 html::-webkit-scrollbar{
   width: 10px;
-	background-color: magenta;
+	background-color: #402488;
 }
 
 html::-webkit-scrollbar-thumb{
-  background-color: cyan;
+  background-color: #E44B63;
 }
 
 .App {
