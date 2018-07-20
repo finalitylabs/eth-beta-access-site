@@ -5,7 +5,7 @@ import '../App.css'
 
 export default () => (
   <Popup
-    trigger={<button className="button"> Select CryptoKitties </button>}
+    trigger={<button className="button"></button>}
     modal
     closeOnDocumentClick
   >

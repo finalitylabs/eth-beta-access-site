@@ -39,7 +39,7 @@ class EthDrop extends Component {
           Animated={Animated}
           
         />
-        <button onClick={clickHandler} className="eth-btn">ETH</button>
+        <button onClick={clickHandler} className="eth-btn"></button>
       </div>
     );
   }

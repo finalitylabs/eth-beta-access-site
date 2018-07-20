@@ -7,6 +7,7 @@ import Portal from './components/animations/Portal';
 
 import Bulletin from './components/Bulletin';
 import CatPopup from './components/CatPopup';
+import Console from './components/svg/Console';
 
 class App extends Component {
 
@@ -16,7 +17,9 @@ class App extends Component {
       <div className="App">
         <div className="main">
 
-            <div className="monitor">Monitor</div>
+            <div className="monitor">
+            <Console />
+            </div>
             <div className="screen"/>
             <div className="cat-popup-btn"/>
             
