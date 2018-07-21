@@ -120,10 +120,11 @@ html::-webkit-scrollbar-thumb{
 
 .bulletin {
   position: relative;
+  background: linear-gradient(45deg red, blue);
   width: 800px;
   height: 500px;
   color: cyan;
-  border: 2px solid cyan;
+  border: 2px solid black;
 }
 
 .cat-btn {
@@ -154,7 +155,7 @@ html::-webkit-scrollbar-thumb{
   outline: 0;
 }
 
-.screen {
+.layer {
   position: absolute;
   width: 100%;
   height: 230vh;
@@ -217,6 +218,18 @@ html::-webkit-scrollbar-thumb{
 
 .button:focus {
   outline: 0;
+}
+
+.screen {
+  position: absolute;
+  width: 350px;
+  height: 200px;
+  margin-top: 40px;
+  margin-left: 78px;
+  background: black;
+  color: rgb(0, 255, 21);
+  text-align: left;
+
 }
 
 

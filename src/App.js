@@ -18,9 +18,10 @@ class App extends Component {
         <div className="main">
 
             <div className="monitor">
+            <div className="screen">[ETH ~]$ print console here...</div>
             <Console />
             </div>
-            <div className="screen"/>
+            <div className="layer"/>
             <div className="cat-popup-btn"/>
             
             <CatPopup />
