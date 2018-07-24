@@ -18,7 +18,9 @@ class App extends Component {
         <div className="main">
 
             <div className="monitor">
-            <div className="screen">[ETH ~]$ print console here...</div>
+            <div className="screen">
+            [ETH ~]$ print console here...
+            </div>
             <Console />
             </div>
             <div className="layer"/>
