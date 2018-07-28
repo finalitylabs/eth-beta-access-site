@@ -22,7 +22,7 @@ class CatDrop extends Component {
     const { isStopped, isPaused, Animated } = this.state;
 
     const clickHandler = event => {
-      console.log(api)
+      console.log(window.web3)
       event.preventDefault();
       if (!isStopped) {
         this.setState({ isStopped: true });
