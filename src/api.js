@@ -1,9 +1,10 @@
-const axios = require('axios')
+import React, { Component } from 'react';
 const EA = require('./contracts/ETHAccess.json')
 
-module.exports = {
-  test: async function () {
-    console.log(axios)
-    //console.log(window.web3)
+class api extends Component {
+  async test() {
+    console.log('weee')
   }
 }
+
+export default api;

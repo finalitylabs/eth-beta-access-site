@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Lottie from "react-lottie";
 import * as animationData from "../../assets/animation_data/01portaldropcat_clean.json";
-const api = require("../../api.js");
+import api from "../../api.js";
 
 class CatDrop extends Component {
   constructor(props) {
@@ -21,8 +21,9 @@ class CatDrop extends Component {
     };
     const { isStopped, isPaused, Animated } = this.state;
 
-    const clickHandler = event => {
-      api.test()
+    const clickHandler = async event => {
+      let helpers = new api()
+      helpers.test()
       event.preventDefault();
       if (!isStopped) {
         this.setState({ isStopped: true });
