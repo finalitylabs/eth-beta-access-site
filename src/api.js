@@ -29,6 +29,14 @@ class api extends Component {
     })
   }
 
+  getParticipantQRTCount(participant) {
+    return new Promise(resolve => {
+      this.eaInstance.balanceOf(participant, (err, res) => {
+        resolve(res.toString())
+      })
+    })
+  }
+
   getPortalKittyCount() {
     return new Promise(resolve => {
       this.eaInstance.participants('0x1e8524370b7caf8dc62e3effbca04ccc8e493ffe',(err, res) => {
