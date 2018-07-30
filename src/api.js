@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 const EA = require('./contracts/ETHAccess.json')
-const eaAddress = '0x7B19229b7845416b31710CcF39C1408E61Fc0E77'
+const eaAddress = '0xe8931b96a36ea32efb0ff80da0571748295cb3ec'
 
 class api extends Component {
   constructor() {
@@ -39,9 +39,8 @@ class api extends Component {
 
   purchaseQRT() {
     return new Promise(resolve => {
-      this.eaInstance.purchaseQRT({from: '0x3c8d121fE359730EA4D6BA119fb48252DF8c23f7', value: window.web3.toWei('0.1')}, (err, res) => {
-        console.log(res)
-        console.log(err)
+      this.eaInstance.purchaseQRTbeta({from: '0x38a583c19540f9f34D94166da2D4401352f4b0F7', value: window.web3.toWei('0.1')}, (err, res) => {
+        resolve(res)
       })
     })       
   }

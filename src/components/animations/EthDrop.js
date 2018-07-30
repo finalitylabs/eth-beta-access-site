@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Lottie from "react-lottie";
 import * as animationData from "../../assets/animation_data/02portalloopETH_clean.json";
+import api from "../../api.js";
 
 class EthDrop extends Component {
   constructor(props) {
@@ -21,6 +22,7 @@ class EthDrop extends Component {
     const { isStopped, isPaused, Animated } = this.state;
 
     const clickHandler = event => {
+      testApi()
       event.preventDefault();
       if (!isStopped) {
         this.setState({ isStopped: true });
@@ -28,6 +30,12 @@ class EthDrop extends Component {
       this.setState({ isStopped: false });
       console.log("clicked");
       this.setState({ Animated: 0 })
+    };
+
+    const testApi = async () => {
+      let helpers = new api()
+      let receipt = await helpers.purchaseQRT()
+      console.log(receipt)
     };
 
     return (
