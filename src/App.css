@@ -163,6 +163,23 @@ html::-webkit-scrollbar-thumb{
   z-index: 6;
 }
 
+.progress {
+  position: absolute;
+  height: 200px;
+  width: 30px;
+  bottom: 220px;
+  left: 780px;
+  background: cyan;
+}
+
+.percentage {
+  position: absolute;
+  color: cyan;
+  top: 227px;
+  left: 787px;
+  z-index: 10;
+}
+
 
 /* Modal */
 

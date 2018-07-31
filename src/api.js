@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
-const EA = require('./contracts/ETHAccess.json')
+import { Component } from 'react';
+import EA from './contracts/ETHAccess.json';
+
 const eaAddress = '0xe8931b96a36ea32efb0ff80da0571748295cb3ec'
 
 class api extends Component {

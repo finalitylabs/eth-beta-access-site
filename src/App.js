@@ -25,7 +25,8 @@ class App extends Component {
             </div>
             <div className="layer"/>
             <div className="cat-popup-btn"/>
-            
+            <div className="progress" />
+            <div className="percentage">50%</div>
             <CatPopup />
             <Portal />
             <CatDrop />
