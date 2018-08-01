@@ -3,31 +3,16 @@
 html, body {
 width: 100%;
 height: 230vh;
-background: linear-gradient(rgb(4, 0, 41) 0%, rgb(141, 0, 160) 150%);
+
 }
 
 svg {
   overflow: hidden;
 }
 
-body::-webkit-scrollbar-track{
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-  box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	background-color: pink;
-}
-
-html::-webkit-scrollbar{
-  width: 10px;
-	background-color: #402488;
-}
-
-html::-webkit-scrollbar-thumb{
-  background-color: #E44B63;
-}
-
 .App {
   position: relative;
-
+  background: linear-gradient(rgb(4, 0, 41) 0%, rgb(141, 0, 160) 150%);
   height: 230vh;
   display: flex;
   flex-direction: column;
@@ -69,7 +54,7 @@ html::-webkit-scrollbar-thumb{
   z-index: 10;
 }
 
-.main {
+.portal-main {
   position: relative;
   width: 100vw;
   height: 100vh;
@@ -104,7 +89,7 @@ html::-webkit-scrollbar-thumb{
   height: 500px;
   margin-left: 120px;
   margin-top: 0px;
-
+  
 }
 
 
@@ -120,7 +105,7 @@ html::-webkit-scrollbar-thumb{
 
 .bulletin {
   position: relative;
-  background: linear-gradient(45deg red, blue);
+
   width: 800px;
   height: 500px;
   color: cyan;
@@ -243,7 +228,6 @@ html::-webkit-scrollbar-thumb{
   height: 200px;
   margin-top: 40px;
   margin-left: 78px;
-  background: black;
   color: rgb(0, 255, 21);
   text-align: left;
 }
