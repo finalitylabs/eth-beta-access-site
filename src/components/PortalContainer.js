@@ -5,8 +5,6 @@ import Portal from './animations/Portal';
 import CatDrop from './animations/CatDrop';
 import EthDrop from './animations/EthDrop';
 
-
-
 class PortalContainer extends Component {
     render() {
         return (
