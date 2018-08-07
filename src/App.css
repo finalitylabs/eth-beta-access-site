@@ -76,7 +76,7 @@ svg {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background: black;
   color: cyan;
@@ -149,16 +149,73 @@ svg {
 }
 
 #roadmap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 100vw;
   height: 100vh;
   background: -webkit-linear-gradient(#3F2488, #65FEFB);
+  color: white;
+}
+
+.roadmap-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 90vw;
+  height: 70vw;
+}
+
+.hexagon {
+  height: 70px;
+  width: 65px;
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  background: white;
+}
+
+.hexagon:nth-child(1) {
+  background: rgb(173, 33, 68);
 }
 
 #social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 100vw;
   height: 100vh;
   background: -webkit-linear-gradient(#0B0419,#24164D);
+  color: white;
 }
+
+.social-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 70vw;
+  height: 70vh;
+}
+
+.twitter {
+  width: 150px;
+  height: 150px;
+  background: cyan;
+}
+
+.github {
+  width: 150px;
+  height: 150px;
+  background: cyan;
+}
+
+.instagram {
+  width: 150px;
+  height: 150px;
+  background: cyan;
+}
+
 
 .portal-main {
   position: relative;
