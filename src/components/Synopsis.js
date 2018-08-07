@@ -9,10 +9,6 @@ class Synopsis extends Component {
                 </p>
                 <p>
                 Vivamus euismod, libero nec consequat ornare, dui neque fermentum nulla, varius fermentum lacus nulla non eros. Duis elit tortor, vehicula quis risus sed, molestie fringilla nulla. Vivamus porta turpis ullamcorper metus tristique, non fringilla nulla vehicula. Cras sed tellus commodo, porttitor mi sodales, ultrices lorem. Donec posuere pretium vehicula. Aenean sed sodales lorem. Donec malesuada tortor at risus sagittis tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt at metus vel pharetra. Maecenas mauris purus, faucibus ac nibh sed, ullamcorper dapibus lacus. Vestibulum in hendrerit orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam suscipit dictum mauris, ut faucibus libero fringilla ut. Mauris molestie mollis augue. Ut vulputate mi eu sodales vulputate. Mauris id sapien porta, suscipit metus luctus, convallis leo.</p>
-                <div className='white-paper'>
-                    <h3>Set-Payment White Paper</h3>
-                    <h3>Layer2Lib</h3>
-                </div>
             </div>
         );
     }
