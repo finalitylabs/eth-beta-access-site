@@ -53,6 +53,7 @@ svg {
 }
 
 #navbar {
+  position: absolute;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -61,6 +62,7 @@ svg {
   background: #333;
   color: white;
   z-index: 20;
+  overflow: hidden;
 }
 
 #navbar ul {
@@ -222,6 +224,7 @@ svg {
   width: 100vw;
   height: 100vh;
   z-index: 4;
+  overflow: hidden;
 }
 
 
@@ -274,7 +277,7 @@ svg {
   width: 110px;
   height: 60px;
   margin-top: -140px;
-  margin-left: -510px;
+  margin-left: -10px;
   cursor: pointer;
   z-index: 10;
 }
@@ -286,7 +289,7 @@ svg {
   width: 65px;
   height: 90px;
   margin-top: -240px;
-  margin-left: -735px;
+  margin-left: -235px;
   cursor: pointer;
   z-index: 10;
 }
