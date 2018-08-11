@@ -8,6 +8,7 @@ overflow-x: hidden;
 }
 
 .App {
+  font-family: 'Open-sans' sans-serif;
   position: relative;
   background: linear-gradient(rgb(4, 0, 41) 0%, rgb(141, 0, 160) 150%);
   height: 100%;
@@ -38,7 +39,7 @@ overflow-x: hidden;
   -webkit-margin-after: 0.1em;
 }
 
-.App a {
+.email {
   width: 100%;
   text-decoration: none;
   color: cyan;
@@ -62,6 +63,11 @@ overflow-x: hidden;
   overflow: hidden;
 }
 
+#navbar a {
+  color: white;
+  text-decoration: none;
+}
+
 #navbar ul {
   display: flex;
 }
@@ -80,6 +86,10 @@ overflow-x: hidden;
   background: black;
   color: cyan;
   z-index: 1;
+}
+
+#herosplash svg {
+  width: 100vw;
 }
 
 .logo-svg {
@@ -116,6 +126,7 @@ overflow-x: hidden;
 }
 
 #synopsis p {
+  text-align: center;
   width: 90vw;
 }
 
@@ -156,38 +167,28 @@ overflow-x: hidden;
 .feature-col {
   height: 100vh;
   width: 28%;
-  background: cyan;
+  border: 3px solid white;
 }
 
 #roadmap {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   width: 100vw;
   height: 100vh;
   background: -webkit-linear-gradient(#3F2488, #65FEFB);
   color: white;
 }
 
-.roadmap-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: 90vw;
-  height: 70vw;
+#roadmap h1 {
+  text-align: center;
 }
 
-.hexagon {
-  height: 70px;
-  width: 65px;
-  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  background: white;
-}
-
-.hexagon:nth-child(1) {
-  background: rgb(173, 33, 68);
+#roadmap svg {
+  position: absolute;
+  width: 100vw;
+  margin-left: -250px;
+  margin-top: -250px;
+  fill: white;
 }
 
 #social {
@@ -205,30 +206,24 @@ overflow-x: hidden;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 70vw;
+  width: 50vw;
   height: 70vh;
 }
 
 .twitter {
-  width: 150px;
-  height: 150px;
-  background: cyan;
+  width: 75px;
 }
 
 .github {
-  width: 150px;
-  height: 150px;
-  background: cyan;
+  width: 75px;
 }
 
 .instagram {
-  width: 150px;
-  height: 150px;
-  background: cyan;
+  width: 75px;
 }
 
 
-.portal-main {
+#portal-main {
   position: relative;
   width: 100vw;
   height: 100vh;
@@ -293,12 +288,11 @@ overflow-x: hidden;
 
 .eth-btn {
   position: absolute;
-  background: none;
+  background: pink;
   border: none;
   width: 65px;
   height: 90px;
-  margin-top: -240px;
-  margin-left: -235px;
+
   cursor: pointer;
   z-index: 10;
 }

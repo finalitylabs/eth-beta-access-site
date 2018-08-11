@@ -19,13 +19,16 @@ class App extends Component {
         <NavBar />
         <HeroSplash />
         <Synopsis />
-        <div className="portal-main">
+        <div id="portal-main">
           <PortalContainer />
         </div>
         <Features />
         <Roadmap />
         <Social />  
-        <a href="mailto:team@finalitylabs.io"><h4>team@finalitylabs.io</h4></a>
+        <a className='email' href="mailto:team@finalitylabs.io">
+          <h3>A Finality Labs Production</h3> 
+          <h4>team@finalitylabs.io</h4>
+        </a>
         
       </div>
     );

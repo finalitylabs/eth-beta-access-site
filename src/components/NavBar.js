@@ -5,13 +5,13 @@ class NavBar extends Component {
     render() {
         return (
             <div id='navbar'>
-                <h1>Logo</h1>
+                <h1>Finality Labs</h1>
                 <ul>
-                    <li>About</li>
-                    <li>Portal</li>
-                    <li>Game Features</li>
-                    <li>Roadmap</li>
-                    <li>Contact</li>
+                    <li><a href='#synopsis'>About</a></li>
+                    <li><a href='#portal-main'>Portal</a></li>
+                    <li><a href='#features'>Game Features</a></li>
+                    <li><a href='#roadmap'>Roadmap</a></li>
+                    <li><a href='#social'>Contact</a></li>
                 </ul>
             
             </div>
