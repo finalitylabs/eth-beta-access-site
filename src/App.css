@@ -3,11 +3,8 @@
 html, body {
 width: 100%;
 height: 100%;
+background: black;
 overflow-x: hidden;
-}
-
-svg {
-  overflow: hidden;
 }
 
 .App {
@@ -85,6 +82,10 @@ svg {
   z-index: 1;
 }
 
+.logo-svg {
+  width: 50%;
+}
+
 .rowdy {
   position: absolute;
   width: 55%;
@@ -114,6 +115,10 @@ svg {
   box-shadow: 0 0 100px 70px rgb(0,0,0);
 }
 
+#synopsis p {
+  width: 90vw;
+}
+
 .white-paper {
   display: flex;
   justify-content: space-around;
@@ -128,6 +133,10 @@ svg {
   height: 200vh;
   background: #0B0419;
   color: white;
+}
+
+#features p{
+  width: 90vw;
 }
 
 .feature-desc {
@@ -232,13 +241,13 @@ svg {
   position: absolute;
   width: 1px;
   margin-left: 450px;
-
 }
 
 #catdrop {
   position: absolute;
   width: 1000px;
   margin-left: 450px;
+  overflow-x: hidden;
 
 }
 
@@ -246,7 +255,7 @@ svg {
   position: absolute;
   width: 1000px;
   margin-left: 450px;
- 
+  overflow-x: hidden;
 }
 
 .monitor {
