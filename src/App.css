@@ -249,8 +249,13 @@ overflow-x: hidden;
 #ethdrop {
   position: absolute;
   width: 1000px;
+  height: 100vh;
+  margin-left: 0px;
+}
+
+.ethdrop {
+  position: absolute;
   margin-left: 450px;
-  overflow-x: hidden;
 }
 
 .monitor {
@@ -288,11 +293,12 @@ overflow-x: hidden;
 
 .eth-btn {
   position: absolute;
-  background: pink;
+  background: none;
   border: none;
   width: 65px;
   height: 90px;
-
+  margin-top: 330px;
+  margin-left: 215px;
   cursor: pointer;
   z-index: 10;
 }

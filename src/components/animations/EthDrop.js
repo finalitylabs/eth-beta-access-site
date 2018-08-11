@@ -41,12 +41,17 @@ class EthDrop extends Component {
     return (
       <div id="ethdrop">
         <Lottie
+          style={{
+            position: 'absolute',
+            marginLeft: '450px'
+          }}
+          className='ethdrop'
           options={defaultOptions}
           isStopped={isStopped}
           isPaused={isPaused}
-          Animated={Animated}
-          
+          Animated={Animated}  
         />
+
         <button onClick={clickHandler} className="eth-btn"></button>
       </div>
     );
