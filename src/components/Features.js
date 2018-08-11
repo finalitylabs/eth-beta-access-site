@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 
+import c3bc from '../assets/C3BC_Duo.svg';
+import postApoc from '../assets/PostApocalyptic_Duo.svg';
+import runner from '../assets/Runner_Duo.svg';
+
 class Features extends Component {
     render() {
         return (
@@ -12,9 +16,24 @@ class Features extends Component {
                     </p>
                 </div>
                 <div className='feature-page'>
-                    <div className='feature-col' />                    
-                    <div className='feature-col' />
-                    <div className='feature-col' />
+                    <div className='feature-col'>
+                        <img src={c3bc} />
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras posuere neque sit amet diam laoreet, id ultrices quam mollis. Vivamus venenatis maximus lacinia. Mauris non odio dui. Proin eget purus erat. Etiam lacinia sollicitudin efficitur. Cras hendrerit aliquam sem, vel interdum metus faucibus quis. Integer eros nunc, blandit eu egestas eget, lobortis vitae velit.
+                        </p>
+                    </div>                    
+                    <div className='feature-col'>
+                        <img src={postApoc} />
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras posuere neque sit amet diam laoreet, id ultrices quam mollis. Vivamus venenatis maximus lacinia. Mauris non odio dui. Proin eget purus erat. Etiam lacinia sollicitudin efficitur. Cras hendrerit aliquam sem, vel interdum metus faucibus quis. Integer eros nunc, blandit eu egestas eget, lobortis vitae velit.
+                        </p>
+                    </div> 
+                    <div className='feature-col'>
+                        <img src={runner} />
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras posuere neque sit amet diam laoreet, id ultrices quam mollis. Vivamus venenatis maximus lacinia. Mauris non odio dui. Proin eget purus erat. Etiam lacinia sollicitudin efficitur. Cras hendrerit aliquam sem, vel interdum metus faucibus quis. Integer eros nunc, blandit eu egestas eget, lobortis vitae velit.
+                        </p>
+                    </div> 
                 </div>
             </div>
         );

@@ -146,16 +146,16 @@ overflow-x: hidden;
   color: white;
 }
 
-#features p{
-  width: 90vw;
-}
-
 .feature-desc {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
   height: 70vh;
+}
+
+.feature-desc p {
+  margin-top: 100px;
+  width: 90vw;
 }
 
 .feature-page {
@@ -167,7 +167,11 @@ overflow-x: hidden;
 .feature-col {
   height: 100vh;
   width: 28%;
-  border: 3px solid white;
+  
+}
+
+.feature-col p {
+  padding: 1em;
 }
 
 #roadmap {
