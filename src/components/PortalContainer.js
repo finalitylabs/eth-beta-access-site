@@ -5,16 +5,17 @@ import Portal from './animations/Portal';
 import CatDrop from './animations/CatDrop';
 import EthDrop from './animations/EthDrop';
 
+import consolesvg from '../assets/presale-groups3_main.svg';
+import Coin from './animations/Coin';
+
 class PortalContainer extends Component {
     render() {
         return (
             <div>
 
                 <div className="monitor">
-                <div className="screen">
-                [ETH ~]$ print console here...
-                </div>
-                <Console />
+                {/* <Console /> */}
+                <img src={consolesvg} />
                 </div>
                 <div className="layer"/>
                 <div className="cat-popup-btn"/>
@@ -23,6 +24,7 @@ class PortalContainer extends Component {
                 <Portal />
                 <CatDrop />
                 <EthDrop />
+                <Coin />
 
             </div>
         );
