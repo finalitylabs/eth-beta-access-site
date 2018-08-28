@@ -3,6 +3,7 @@ import Lottie from "react-lottie";
 import * as animationData from "../../assets/animation_data/02portalloopETH_clean.json";
 import api from "../../api.js";
 
+
 class EthDrop extends Component {
   constructor(props) {
     super(props);
@@ -51,7 +52,7 @@ class EthDrop extends Component {
           isPaused={isPaused}
           Animated={Animated}  
         />
-
+        
         <button onClick={clickHandler} className="eth-btn"></button>
       </div>
     );

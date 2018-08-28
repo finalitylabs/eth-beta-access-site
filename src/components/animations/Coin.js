@@ -7,15 +7,15 @@ class Coin extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            isStopped: false,
-            isPaused: true
+            isStopped: true,
+            isPaused: false
         }
     }
     
     render() {
         const defaultOptions = {
-            loop: true,
-            autoplay: true,
+            loop: false,
+            autoplay: false,
             animationData: animationData
         }
 

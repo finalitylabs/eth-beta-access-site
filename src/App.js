@@ -9,6 +9,7 @@ import Features from './components/Features';
 import Roadmap from './components/Roadmap';
 import Social from './components/Social';
 import Synopsis from './components/Synopsis';
+import TechText from './components/TechText';
 
 class App extends Component {
 
@@ -23,6 +24,7 @@ class App extends Component {
           <PortalContainer />
         </div>
         <Features />
+        <TechText />
         <Roadmap />
         <Social />  
         <a className='email' href="mailto:team@finalitylabs.io">
