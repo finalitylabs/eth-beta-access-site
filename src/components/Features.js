@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 
-import c3bc from '../assets/FL_ExtremeTimeHeroes_CharacterProfiles_ElBrujo.svg';
-import postApoc from '../assets/FL_ExtremeTimeHeroes_CharacterProfiles_BigBoi.svg';
-import runner from '../assets/FL_ExtremeTimeHeroes_CharacterProfiles_Rowdy.svg';
+import elbrujo from '../assets/FL_ExtremeTimeHeroes_CharacterProfiles_ElBrujo.svg';
+import bigboi from '../assets/FL_ExtremeTimeHeroes_CharacterProfiles_BigBoi.svg';
+import rowdy from '../assets/FL_ExtremeTimeHeroes_CharacterProfiles_Rowdy.svg';
+import bestia from '../assets/FL_ExtremeTimeHeroes_CharacterProfiles_Bestia.svg';
+import ruby from '../assets/FL_ExtremeTimeHeroes_CharacterProfiles_Ruby.svg';
+import hank from '../assets/FL_ExtremeTimeHeroes_CharacterProfiles_Hank.svg';
 
 class Features extends Component {
     render() {
@@ -18,37 +21,37 @@ class Features extends Component {
                 </div>
                 <div className='feature-page'>
                     <div className='feature-col'>
-                        <img src={c3bc} />
+                        <img src={elbrujo} />
                         <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras posuere neque sit amet diam laoreet, id ultrices quam mollis. Vivamus venenatis maximus lacinia. Mauris non odio dui. Proin eget purus erat. Etiam lacinia sollicitudin efficitur. Cras hendrerit aliquam sem, vel interdum metus faucibus quis. Integer eros nunc, blandit eu egestas eget, lobortis vitae velit.
                         </p>
                     </div>                    
                     <div className='feature-col'>
-                        <img src={postApoc} />
+                        <img src={bigboi} />
                         <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras posuere neque sit amet diam laoreet, id ultrices quam mollis. Vivamus venenatis maximus lacinia. Mauris non odio dui. Proin eget purus erat. Etiam lacinia sollicitudin efficitur. Cras hendrerit aliquam sem, vel interdum metus faucibus quis. Integer eros nunc, blandit eu egestas eget, lobortis vitae velit.
                         </p>
                     </div> 
                     <div className='feature-col'>
-                        <img src={runner} />
+                        <img src={rowdy} />
                         <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras posuere neque sit amet diam laoreet, id ultrices quam mollis. Vivamus venenatis maximus lacinia. Mauris non odio dui. Proin eget purus erat. Etiam lacinia sollicitudin efficitur. Cras hendrerit aliquam sem, vel interdum metus faucibus quis. Integer eros nunc, blandit eu egestas eget, lobortis vitae velit.
                         </p>
                     </div>
                     <div className='feature-col'>
-                        <img src={c3bc} />
+                        <img src={bestia} />
                         <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras posuere neque sit amet diam laoreet, id ultrices quam mollis. Vivamus venenatis maximus lacinia. Mauris non odio dui. Proin eget purus erat. Etiam lacinia sollicitudin efficitur. Cras hendrerit aliquam sem, vel interdum metus faucibus quis. Integer eros nunc, blandit eu egestas eget, lobortis vitae velit.
                         </p>
                     </div>                    
                     <div className='feature-col'>
-                        <img src={postApoc} />
+                        <img src={ruby} />
                         <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras posuere neque sit amet diam laoreet, id ultrices quam mollis. Vivamus venenatis maximus lacinia. Mauris non odio dui. Proin eget purus erat. Etiam lacinia sollicitudin efficitur. Cras hendrerit aliquam sem, vel interdum metus faucibus quis. Integer eros nunc, blandit eu egestas eget, lobortis vitae velit.
                         </p>
                     </div> 
                     <div className='feature-col'>
-                        <img src={runner} />
+                        <img src={hank} />
                         <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras posuere neque sit amet diam laoreet, id ultrices quam mollis. Vivamus venenatis maximus lacinia. Mauris non odio dui. Proin eget purus erat. Etiam lacinia sollicitudin efficitur. Cras hendrerit aliquam sem, vel interdum metus faucibus quis. Integer eros nunc, blandit eu egestas eget, lobortis vitae velit.
                         </p>
