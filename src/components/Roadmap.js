@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import RoadMapSVG from './svg/RoadmapSVG';
+import roadmap from '../assets/Roadmap.svg'
 
 class Roadmap extends Component {
     render() {
@@ -7,7 +7,7 @@ class Roadmap extends Component {
             <div id='roadmap'>
                 <h1>Roadmap</h1>
                 
-                <RoadMapSVG />
+                <img src={roadmap} alt='roadmap' />
                 
             </div>
         );
