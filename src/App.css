@@ -22,15 +22,8 @@ font-family: 'Rajdhani', sans-serif;
 
 .App h1 {
   font-family: 'Rajdhani', sans-serif;
-  font-size: 36px;
-}
-
-.App h2 {
-  font-size: 32pt;
-  color: cyan;
-  text-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
-  -webkit-margin-before: 0.1em;
-  -webkit-margin-after: 0.1em;
+  font-size: 36pt;
+  line-height: 24px;
 }
 
 .email {
@@ -49,7 +42,7 @@ font-family: 'Rajdhani', sans-serif;
   position: absolute;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100vw;
   height: 65px;
   background: #030011;
@@ -61,10 +54,12 @@ font-family: 'Rajdhani', sans-serif;
 #navbar a {
   color: white;
   text-decoration: none;
+
 }
 
 #navbar ul {
   display: flex;
+  margin-right: 75px;
 }
 
 #navbar li{
@@ -72,7 +67,13 @@ font-family: 'Rajdhani', sans-serif;
   font-weight: 600;
   font-size: 16px;
   list-style-type: none; 
+  line-height: 24px;
   padding-left: 20px;
+}
+
+#navbar img {
+  height: 25px;
+  margin-left: 75px;
 }
 
 #herosplash {
@@ -98,17 +99,29 @@ font-family: 'Rajdhani', sans-serif;
   justify-content: center;
   color: white;
   width: 100vw;
-  height: 100vh;
-  background: linear-gradient(#030011 ,#3e178c);
+  height: 100%;
+  background: linear-gradient(#030011 ,#5cfffc);
   z-index: 2;
   box-shadow: 0 0 100px 70px rgb(0,0,0);
 }
 
+#synopsis h1 {
+  padding-top: 75px;
+}
+
+#synopsis img {
+  width: 750px;
+}
+
 #synopsis p {
-  text-align: center;
+  text-align: center; 
+  line-height: 24px;
   padding-left: 150px;
   padding-right: 150px;
-  line-height: 24px;
+}
+
+.synopsislastp {
+  padding-bottom: 75px;
 }
 
 .white-paper {
@@ -122,7 +135,7 @@ font-family: 'Rajdhani', sans-serif;
   flex-direction: column;
   align-items: center;
   width: 100vw;
-  height: 200vh;
+  height: 100%;
   background: #0B0419;
   color: white;
 }
@@ -147,6 +160,7 @@ font-family: 'Rajdhani', sans-serif;
 
 .feature-page {
   display: flex;
+  flex-wrap: wrap;
   width: 100vw;
   justify-content: space-around;
 }
@@ -154,7 +168,6 @@ font-family: 'Rajdhani', sans-serif;
 .feature-col {
   height: 100vh;
   width: 28%;
-  
 }
 
 .feature-col p {
