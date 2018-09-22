@@ -11,7 +11,7 @@ class NavBar extends Component {
                     <li><a href='#synopsis'>Synopsis</a></li>
                     <li><a href='#portal-main'>Portal</a></li>
                     <li><a href='#features'>Game Features</a></li>
-                    <li><a href='#technical'>Technial Info</a></li>                    
+                    <li><a href='#techtext'>Technial Info</a></li>                    
                     <li><a href='#roadmap'>Roadmap</a></li>
                     <li><a href='#social'>Contact</a></li>
                 </ul>
