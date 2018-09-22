@@ -70,9 +70,9 @@ class Features extends Component {
                     <img src={c3bcBackground} alt='c3bc-background' />
                     <p>Circa 3000 B.C. (C3BC)</p>
                     <img src={runnerBackground} alt='runner-background' />
-                    <p>Circa 3000 B.C. (C3BC)</p>
+                    <p>Runner</p>
                     <img src={postapocBackground} alt='postapoc-background' />
-                    <p>Circa 3000 B.C. (C3BC)</p>
+                    <p>Post-Apocalyptic</p>
                 </div>
             </div>
         );

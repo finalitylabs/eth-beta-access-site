@@ -148,7 +148,7 @@ font-family: 'Rajdhani', sans-serif;
 }
 
 .feature-bgs img {
-  width: 80vw;
+  width: 850px;
 }
 
 #features h1 {
@@ -199,8 +199,23 @@ font-family: 'Rajdhani', sans-serif;
 
 #techtext {
   width: 100vw;
-  height: 100vh;
-  background: rgb(241, 20, 87);
+  height: 100%;
+  background: -webkit-linear-gradient(#030011, #3e178c);
+  color: white;
+  text-align: center;
+}
+
+#techtext h1 {
+  padding-top: 75px;
+}
+
+#techtext p {
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+#techtext p:last-of-type {
+  padding-bottom: 75px;
 }
 
 #roadmap {
@@ -226,33 +241,39 @@ font-family: 'Rajdhani', sans-serif;
 
 #social {
   display: flex;
-  flex-direction: column;
+  flex-direction: rpw;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   width: 100vw;
-  height: 100vh;
-  background: -webkit-linear-gradient(#0B0419,#24164D);
+  height: 100px;
+  background: #030011;
   color: white;
 }
 
+#social p {
+  padding-left: 75px;
+  line-height: 24pt;
+  font-size: 16pt;
+}
+
 .social-inner {
+  padding-right: 75px;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: 50vw;
-  height: 70vh;
 }
 
 .twitter {
-  width: 75px;
+  width: 50px;
+  
 }
 
 .github {
-  width: 75px;
+  width: 50px;
+  padding-left: 25px;
 }
 
 .instagram {
-  width: 75px;
+  width: 50px;
+  padding-left: 25px;
 }
 
 

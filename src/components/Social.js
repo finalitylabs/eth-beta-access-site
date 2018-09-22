@@ -7,7 +7,7 @@ class Social extends Component {
     render() {
         return (
             <div id='social'>
-                <h1>JOIN THE FIGHT!</h1>
+                <p>A Finality Labs Production | JOIN THE FIGHT!</p>
                 <div className='social-inner'> 
                     <div>       
                     <a href='https://twitter.com/HeroesExtreme' target='_blank' rel='noopener noreferrer'>

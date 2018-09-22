@@ -27,10 +27,7 @@ class App extends Component {
         <TechText />
         <Roadmap />
         <Social />  
-        <a className='email' href="mailto:team@finalitylabs.io">
-          <h3>A Finality Labs Production</h3> 
-          <h4>team@finalitylabs.io</h4>
-        </a>
+        
         
       </div>
     );
