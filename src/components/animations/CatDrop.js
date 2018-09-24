@@ -18,10 +18,9 @@ class CatDrop extends Component {
         };
     }
 
-    clickHandler = async event => {
+    clickHandler = async  => {
         console.log("clicked");
-        testApi()
-        event.preventDefault();
+        this.testApi()
         if (!this.state.isStopped) {
             this.setState({ isStopped: true });
         }
@@ -33,25 +32,24 @@ class CatDrop extends Component {
     };
 
     testApi = async () => {
-        let helpers = new api()
+        let helpers = new api();
         let network = helpers.getNetwork()
-        console.log(network)
+        console.log("network:", network)
         let qrt = await helpers.getQRTcount()
-        console.log(qrt)
+        console.log("wrt:", qrt)
         let kittyCount = await helpers.getPortalKittyCount()
-        console.log(kittyCount)
+        console.log("kittyCount:", kittyCount)
     };
     render() {
         return (
             <div id="catdrop">
                 <Lottie
-                    options={defaultOptions}
-                    isStopped={isStopped}
-                    isPaused={isPaused}
+                    options={this.defaultOptions}
+                    isStopped={this.state.isStopped}
+                    isPaused={this.state.isPaused}
                     width='100%'
-                    Animated={Animated}
+                    Animated={this.state.Animated}
                 />
-                <button onClick={clickHandler} className="cat-btn"></button>
             </div>
         );
     }
