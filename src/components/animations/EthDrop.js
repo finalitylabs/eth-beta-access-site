@@ -20,7 +20,6 @@ class EthDrop extends Component {
   }
 
   clickHandler = () => {
-    console.log("clicked");
     this.testApi()
     if (!this.state.isStopped) {
         this.setState({ isStopped: true });

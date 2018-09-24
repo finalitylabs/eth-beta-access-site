@@ -18,8 +18,7 @@ class CatDrop extends Component {
         };
     }
 
-    clickHandler = async  => {
-        console.log("clicked");
+    clickHandler = () => {
         this.testApi()
         if (!this.state.isStopped) {
             this.setState({ isStopped: true });

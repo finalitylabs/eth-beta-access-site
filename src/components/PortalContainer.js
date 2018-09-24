@@ -25,8 +25,7 @@ class PortalContainer extends Component {
             <div id="portal-main">
 
                 <div className="monitor">
-                {/* <Console /> */}
-                    <img onLoad={this.handleImageLoad}src={consolesvg} />
+                    <img src={consolesvg} />
                     <DropButton dropRef={this.state.catDropRef} className="popup-btn cat-popup-btn"/>
                     <DropButton dropRef={this.state.ethDropRef} className="popup-btn eth-popup-btn"/>
                     <Coin />
