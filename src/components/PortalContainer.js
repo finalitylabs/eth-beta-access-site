@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import "./../css/portalSection.css";
+
 import Console from './svg/Console';
 import Portal from './animations/Portal';
 import CatDrop from './animations/CatDrop';
