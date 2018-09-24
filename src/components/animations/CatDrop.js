@@ -20,9 +20,6 @@ class CatDrop extends Component {
 
     clickHandler = () => {
         this.testApi()
-        if (!this.state.isStopped) {
-            this.setState({ isStopped: true });
-        }
         this.setState({ 
             isStopped: false,
             Animated: 0

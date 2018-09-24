@@ -30,6 +30,7 @@ class PortalContainer extends Component {
                     <DropButton dropRef={this.state.ethDropRef} className="popup-btn eth-popup-btn"/>
                     <Coin />
                     <Portal />
+                    <div className="remove-click-layer"/>
                     <CatDrop ref={ref => !this.state.catDropRef && this.setState({catDropRef: ref})}/>
                     <EthDrop ref={ref => !this.state.ethDropRef && this.setState({ethDropRef: ref})}/>
                 </div>
