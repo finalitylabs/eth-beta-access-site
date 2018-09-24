@@ -16,12 +16,8 @@ class PortalContainer extends Component {
         super(props);
         this.state = {
             catDropRef: false,
-            dropButtonsRef: false
+            ethDropRef: false
         };
-    }
-
-    handleImageLoad = () => {
-        // this.state.dropButtonsRef.getButtonTopOffsets();
     }
 
     render() {
@@ -31,13 +27,12 @@ class PortalContainer extends Component {
                 <div className="monitor">
                 {/* <Console /> */}
                     <img onLoad={this.handleImageLoad}src={consolesvg} />
-                    <DropButton ref={this.state.catDropRef}/>
-                    {/* <div className="progress" /> */}
-                    {/* <div className="percentage">40%</div> */}
-                    {/* <Portal /> */}
-                    {/* <CatDrop ref={ref => !this.state.catDropRef && this.setState({catDropRef: ref})}/> */}
-                    {/* <EthDrop /> */}
-                    {/* <Coin /> */}
+                    <DropButton dropRef={this.state.catDropRef} className="popup-btn cat-popup-btn"/>
+                    <DropButton dropRef={this.state.ethDropRef} className="popup-btn eth-popup-btn"/>
+                    <Coin />
+                    <Portal />
+                    <CatDrop ref={ref => !this.state.catDropRef && this.setState({catDropRef: ref})}/>
+                    <EthDrop ref={ref => !this.state.ethDropRef && this.setState({ethDropRef: ref})}/>
                 </div>
                 
 

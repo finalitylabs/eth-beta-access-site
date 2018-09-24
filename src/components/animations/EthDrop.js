@@ -12,49 +12,47 @@ class EthDrop extends Component {
       isPaused: false,
       Animated: 0,
     };
-  }
-
-  render() {
-    const defaultOptions = {
+    this.defaultOptions = {
       loop: false,
       autoplay: false,
       animationData: animationData
     };
-    const { isStopped, isPaused, Animated } = this.state;
+  }
 
-    const clickHandler = event => {
-      testApi()
-      event.preventDefault();
-      if (!isStopped) {
+  clickHandler = () => {
+    console.log("clicked");
+    this.testApi()
+    if (!this.state.isStopped) {
         this.setState({ isStopped: true });
-      }
-      this.setState({ isStopped: false });
-      console.log("clicked");
-      this.setState({ Animated: 0 })
-    };
+    }
+    this.setState({ 
+        isStopped: false,
+        Animated: 0
+    });
+    console.log("clicked");
+  };
 
-    const testApi = async () => {
-      let helpers = new api()
-      let receipt = await helpers.purchaseQRT()
-      console.log(receipt)
-    };
+  testApi = async () => {
+    let helpers = new api();
+    let network = helpers.getNetwork()
+    console.log("network:", network)
+    let qrt = await helpers.getQRTcount()
+    console.log("wrt:", qrt)
+    let kittyCount = await helpers.getPortalKittyCount()
+    console.log("kittyCount:", kittyCount)
+  };
 
+  render() {
     return (
       <div id="ethdrop">
         <Lottie
-          style={{
-            position: 'absolute',
-            marginLeft: '450px'
-          }}
           className='ethdrop'
-          options={defaultOptions}
-          isStopped={isStopped}
-          isPaused={isPaused}
-          Animated={Animated}  
+          options={this.defaultOptions}
+          isStopped={this.state.isStopped}
+          isPaused={this.state.isPaused}
+          Animated={this.state.Animated}  
         />
-        
-        <button onClick={clickHandler} className="eth-btn"></button>
-      </div>
+    </div>
     );
   }
 }

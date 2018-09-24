@@ -5,14 +5,14 @@ class DropButtons extends Component {
         super(props);
     }
     handleDropButtonClick() {
-        this.props.ref.clickHandler();
+        this.props.dropRef.clickHandler();
     }
 
     render() {
         return (
             <div 
                 onClick={() => this.handleDropButtonClick()} 
-                className="cat-popup-btn"
+                className={this.props.className}
             />
         );
     }

@@ -22,6 +22,8 @@ class Portal extends Component {
         const { isStopped, isPaused } = this.state;
         return (
             <div id="portal-animation">
+                <div className="percentage">60%</div>
+                <div className="progress" />
                 <Lottie 
                     options={defaultOptions}
                     isStopped={isStopped}
