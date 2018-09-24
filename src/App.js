@@ -24,7 +24,7 @@ class App extends Component {
         {/* <Features /> */}
         {/* <TechText /> */}
         {/* <Roadmap /> */}
-        {/* <Social />   */}
+        <Social />  
         
         
       </div>

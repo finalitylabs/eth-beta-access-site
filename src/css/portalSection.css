@@ -1,0 +1,93 @@
+#portal-main {
+    position: relative;
+    z-index: 4;
+    /* overflow: hidden; */
+  }
+  
+  
+  #portal-animation {
+    position: absolute;
+    width: 1px;
+    margin-left: 450px;
+  }
+  
+  #catdrop {
+    position: absolute;
+    width: 1000px;
+    margin-left: 450px;
+    overflow-x: hidden;
+  
+  }
+  
+  #ethdrop {
+    position: absolute;
+    width: 1000px;
+    height: 100vh;
+    margin-left: 0px;
+    margin-top: -50px;
+  }
+  
+  .ethdrop {
+    position: absolute;
+    margin-left: 450px;
+  }
+  
+  .monitor {
+    position: absolute;
+    width: 100vw;
+    margin-top: -70px;
+  }
+  
+  .cat-popup-btn {
+    position: absolute;
+    background: none;
+    border: none;
+    width: 110px;
+    height: 50px;
+    margin-top: -190px;
+    margin-left: -30px;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .eth-btn {
+    position: absolute;
+    background: none;
+    border: none;
+    width: 60px;
+    height: 70px;
+    margin-top: 330px;
+    margin-left: 240px;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .eth-btn:focus, .cat-btn:focus {
+    outline: 0;
+  }
+  
+  .layer {
+    position: absolute;
+    width: 100%;
+    height: 230vh;
+    overflow: hidden;
+    z-index: 6;
+  }
+  
+  .progress {
+    position: absolute;
+    height: 200px;
+    width: 30px;
+    bottom: 220px;
+    left: 780px;
+    background: cyan;
+  }
+  
+  .percentage {
+    position: absolute;
+    color: cyan;
+    top: 227px;
+    left: 787px;
+    z-index: 10;
+  }
+  

@@ -13,7 +13,7 @@ import Coin from './animations/Coin';
 class PortalContainer extends Component {
     render() {
         return (
-            <div>
+            <div id="portal-main">
 
                 <div className="monitor">
                 {/* <Console /> */}
