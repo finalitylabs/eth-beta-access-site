@@ -26,7 +26,8 @@ class PortalContainer extends Component {
         this.state = {
             catDropAnimation: false,
             ethDropAnimation: false,
-            coinAnimation: false
+            coinAnimation: false,
+            terminal: false
         };
     }
 
@@ -37,7 +38,8 @@ class PortalContainer extends Component {
                 <div className="monitor">
                     <div className="remove-click-layer"/>
                     <img src={consolesvg} />
-                    <Terminal/>
+                    <Terminal ref={ ref => !this.state.terminal && this.setState({terminal: ref})}/>
+
                     <DropButton 
                         dropAnimation={this.state.catDropAnimation}
                         className="popup-btn cat-popup-btn"
@@ -45,6 +47,7 @@ class PortalContainer extends Component {
                     <DropButton 
                         dropAnimation={this.state.ethDropAnimation}
                         transactionFunction={ethForQRT}
+                        terminal={this.state.terminal}
                         className="popup-btn eth-popup-btn"
                     />
                     <KittyCount/>

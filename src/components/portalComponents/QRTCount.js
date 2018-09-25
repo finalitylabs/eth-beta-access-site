@@ -12,7 +12,6 @@ class QRTCount extends Component {
         const api =  new Api();
         const account = await api.getAccount();
         const QRTCount = await api.getParticipantQRTCount(account[0]);
-        console.log(QRTCount);
         this.setState({
             QRTCount
         })
