@@ -33,7 +33,7 @@ class DropAnimation extends Component {
 
     render() {
         return (
-            <div className="dropAnimation">
+            <div className="drop-animation">
                 <Lottie
                     options={this.defaultOptions}
                     isStopped={this.state.isStopped}

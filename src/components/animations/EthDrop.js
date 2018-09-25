@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Lottie from "react-lottie";
 import * as animationData from "../../assets/animation_data/02portalloopETH_clean.json";
-import api from "../../api.js";
 
 
 class EthDrop extends Component {
@@ -19,23 +18,12 @@ class EthDrop extends Component {
     };
   }
 
-  clickHandler = () => {
-    this.testApi()
+  clickHandler = (e) => {
     this.setState({ 
         isStopped: false,
         Animated: 0
     });
     console.log("clicked");
-  };
-
-  testApi = async () => {
-    let helpers = new api();
-    let network = helpers.getNetwork()
-    console.log("network:", network)
-    let qrt = await helpers.getQRTcount()
-    console.log("wrt:", qrt)
-    let kittyCount = await helpers.getPortalKittyCount()
-    console.log("kittyCount:", kittyCount)
   };
 
   render() {

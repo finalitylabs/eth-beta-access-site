@@ -69,7 +69,7 @@
   bottom: 27%;
 }
 
-#catdrop , #ethdrop{
+.drop-animation{
   position: absolute;
   width: 70%;
   top: 21%;
