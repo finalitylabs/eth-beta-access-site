@@ -8,38 +8,49 @@ class DropAnimation extends Component {
         this.state = {
             isStopped: true,
             isPaused: false,
-            Animated: 0,
+            progress: 0
         };
         this.defaultOptions = {
             loop: false,
             autoplay: false,
             animationData: this.props.animationData,
-            // eventListeners=[
-            //     {
-            //       eventName: 'complete',
-            //       callback: this.onAnimationComplete,
-            //     },
-            //   ]
         };
     }
-
+    
+    
     clickHandler = () => {
-        this.setState({ 
-            isStopped: false,
-            Animated: 0
-        });
-        console.log("clicked");
+        this.animation.play();
     };
-
+    
+    onAnimationComplete = () => {
+        this.setState({ 
+            progress:0
+        });
+        this.props.startCoinAnimation();
+    }
+    
     render() {
         return (
             <div className="drop-animation">
                 <Lottie
+                    ref={ animation => {
+                            this.animation = animation;
+                        }
+                    }
+                    progress={this.state.progress}
                     options={this.defaultOptions}
                     isStopped={this.state.isStopped}
                     isPaused={this.state.isPaused}
                     width='100%'
                     Animated={this.state.Animated}
+                    eventListeners={
+                        [
+                            {
+                                eventName: 'complete',
+                                callback: this.onAnimationComplete,
+                            },
+                        ]
+                    }
                 />
             </div>
         );

@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 
 import "./../css/portalSection.css";
 
-import * as catAnimationData from "../assets/animation_data/01portaldropcat_clean.json";
-import * as ethAnimationData from "../assets/animation_data/02portalloopETH_clean.json";
-
 import Console from './svg/Console';
 import Portal from './animations/Portal';
 import Coin from './animations/Coin';
@@ -16,6 +13,9 @@ import KittyIdInput from './portalComponents/KittyIdInput';
 import KittyCount from './portalComponents/KittyCount';
 
 import consolesvg from '../assets/presale-groups3_main.svg';
+
+import * as catAnimationData from "../assets/animation_data/01portaldropcat_clean.json";
+import * as ethAnimationData from "../assets/animation_data/02portalloopETH_clean.json";
 
 class PortalContainer extends Component {
     constructor(props) {
@@ -37,12 +37,10 @@ class PortalContainer extends Component {
 
                     <DropButton 
                         dropAnimation={this.state.catDropAnimation} 
-                        coinAnimation={this.state.coinAnimation}
                         className="popup-btn cat-popup-btn"
                     />
                     <DropButton 
                         dropAnimation={this.state.ethDropAnimation}
-                        coinAnimation={this.state.coinAnimation}
                         className="popup-btn eth-popup-btn"
                     />
                     {/* <KittyCount/>
@@ -51,8 +49,16 @@ class PortalContainer extends Component {
 
                     <Portal />
                     <Coin ref={ref => !this.state.coinAnimation && this.setState({coinAnimation: ref})}/>
-                    <DropAnimation animationData={catAnimationData} ref={ref => !this.state.catDropAnimation && this.setState({catDropAnimation: ref})}/>
-                    <DropAnimation animationData={ethAnimationData} ref={ref => !this.state.ethDropAnimation && this.setState({ethDropAnimation: ref})}/>
+                    <DropAnimation 
+                        animationData={catAnimationData} 
+                        ref={ref => !this.state.catDropAnimation && this.setState({catDropAnimation: ref})}
+                        startCoinAnimation = {this.state.coinAnimation.startAnimation}
+                    />
+                    <DropAnimation 
+                        animationData={ethAnimationData} 
+                        ref={ref => !this.state.ethDropAnimation && this.setState({ethDropAnimation: ref})}
+                        startCoinAnimation = {this.state.coinAnimation.startAnimation}
+                    />
                 </div>
                 
 

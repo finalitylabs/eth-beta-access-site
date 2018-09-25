@@ -6,7 +6,6 @@ class DropButtons extends Component {
     }
     handleDropButtonClick() {
         this.props.dropAnimation.clickHandler();
-        this.props.coinAnimation.clickHandler();
     }
 
     render() {

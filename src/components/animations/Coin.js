@@ -8,7 +8,8 @@ class Coin extends Component {
         super(props);
         this.state = {
             isStopped: true,
-            isPaused: false
+            isPaused: false,
+            progress: 0
         }
         this.defaultOptions = {
             loop: false,
@@ -17,18 +18,34 @@ class Coin extends Component {
         }
     }
 
-    clickHandler = (e) => {
-        this.setState({ 
-            isStopped: false,
-            Animated: 0
-        });
+    startAnimation = (e) => {
+        this.animation.play()
         console.log("clicked");
     };
+
+    onAnimationComplete = () => {
+        this.setState({ 
+            progress:0
+        });
+    }
     
     render() {
         return (
             <div id="coin-animation">
                 <Lottie 
+                    ref={ 
+                        animation => {
+                            this.animation = animation;
+                        }
+                    }
+                    eventListeners={
+                        [
+                            {
+                                eventName: 'complete',
+                                callback: this.onAnimationComplete,
+                            },
+                        ]
+                    }
                     options={this.defaultOptions}
                     isStopped={this.state.isStopped}
                     isPaused={this.state.sPaused}
