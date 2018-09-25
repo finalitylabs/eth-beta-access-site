@@ -1,8 +1,15 @@
-import React, { Component } from 'react';
-import Api from './../Api';
+import Api from '../Api';
 
-class EthForQRT extends Component {
+const ethForQRT = async () => {
+    return new Promise (async (resolve)=> {
+        console.log('called');
+        const api = new Api();
+        const account = await api.getAccount()[0];
+        console.log(account);
+        const tx = await api.purchaseQRT(account);
+        resolve(tx);
+    });
 
 }
 
-export default EthForQRT;
+export default ethForQRT;

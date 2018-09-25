@@ -4,8 +4,12 @@ class DropButtons extends Component {
     constructor(props) {
         super(props);
     }
-    handleDropButtonClick() {
-        this.props.dropAnimation.clickHandler();
+
+    handleDropButtonClick = async () => {
+        const tx = await this.props.transactionFunction();
+        setTimeout(() => {
+            this.props.dropAnimation.clickHandler();
+        }, 2000);
     }
 
     render() {

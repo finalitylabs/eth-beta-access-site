@@ -17,7 +17,7 @@ class Api extends Component {
   getAccount() {
     return new Promise(resolve => {
       window.web3.eth.getAccounts((err,res)=>{
-        console.log(res)
+        resolve(res);
       })
     })
   }
@@ -46,9 +46,9 @@ class Api extends Component {
     })    
   }
 
-  purchaseQRT() {
+  purchaseQRT(account) {
     return new Promise(resolve => {
-      this.eaInstance.purchaseQRTbeta({from: '0x38a583c19540f9f34D94166da2D4401352f4b0F7', value: window.web3.toWei('0.1')}, (err, res) => {
+      this.eaInstance.purchaseQRTbeta({from: account, value: window.web3.toWei('0.1')}, (err, res) => {
         resolve(res)
       })
     })       

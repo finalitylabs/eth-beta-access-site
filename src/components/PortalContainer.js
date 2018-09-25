@@ -12,6 +12,8 @@ import QRTCount from './portalComponents/QRTCount';
 import KittyIdInput from './portalComponents/KittyIdInput';
 import KittyCount from './portalComponents/KittyCount';
 
+import ethForQRT from './ethForQRT';
+
 import consolesvg from '../assets/presale-groups3_main.svg';
 
 import * as catAnimationData from "../assets/animation_data/01portaldropcat_clean.json";
@@ -37,11 +39,11 @@ class PortalContainer extends Component {
 
                     <DropButton 
                         dropAnimation={this.state.catDropAnimation}
-                         
                         className="popup-btn cat-popup-btn"
-                    />
+                        />
                     <DropButton 
                         dropAnimation={this.state.ethDropAnimation}
+                        transactionFunction={ethForQRT}
                         className="popup-btn eth-popup-btn"
                     />
                     <KittyCount/>
