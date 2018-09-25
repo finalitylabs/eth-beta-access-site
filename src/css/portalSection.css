@@ -48,6 +48,7 @@
   position: absolute;
   left: 40%;
   bottom: calc(12% + 5px);
+  width: 70%;
 }
 
 .percentage {
@@ -62,18 +63,17 @@
 
 .progress {
   background-color: #5BFFFC;
-  width: calc(2% + 5px);
-  height: 26%;
+  width: 4%;
   position: absolute;
-  left: calc(33% + 5px);
+  left: calc(33%);
   bottom: 27%;
 }
 
 .drop-animation{
   position: absolute;
   width: 70%;
-  top: 21%;
-  right: -80px;
+  top: 19%;
+  right: -10%;
   z-index: 1;
 }
 
@@ -87,31 +87,35 @@
 }
 
 .kitty-count {
+  padding: 0;
+  margin: 0;
   position: absolute;
   left: 37%;
-  top: calc(55% + 2px);
-  color: #5BFFFC;
-  font-size: 1.8em;
-  padding: 0 20px;
+  top: 55.9%;
+  color: #5BFFFC;;
+  font-size: 1.2vw;
   background-color: #270F5D;
+  padding: 0 1%;
+
 }
 
 
 .QRT-count {
   position: absolute;
-  left: calc(37% + 10px);
-  top: calc(79% - 3px);
+  left: 37.8%;
+  top: 79% ;
   color: #5BFFFC;
-  font-size: 1.4em;
-  padding: 0 20px;
+  font-size: 1.2vw;
+  padding: 0 1.2%;
   background-color: #270F5D;
 }
 
 .kitty-id-form {
   z-index: 3;
   position: absolute;
-  left: calc(18% + 10px);
-  top: calc(59% - 3px);
+  left: 18.6%;
+  top: 59%;
+  width: 3%;
   height: 3%;
   width: 10%;
 }
@@ -121,8 +125,9 @@
   width: 100%;
   height: 100%;
   color: #5BFFFC;
-  padding-left: 15px;
-  font-size: 20px;
+  padding: 0;
+  padding-left: 5%;
+  font-size: 1.4vw;
 }
 
 ::placeholder{

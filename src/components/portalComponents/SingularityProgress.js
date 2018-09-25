@@ -16,7 +16,7 @@ class Portal extends Component {
         const QRTCount = await api.getQRTcount();
         const QRTCountGoal = 100; 
         const singularityPercentage = ((QRTCount / QRTCountGoal) * 100).toFixed(2);
-        const progressHeight = (QRTCount / QRTCountGoal) * 24;
+        const progressHeight = (QRTCount / QRTCountGoal) * 25.9;
         this.setState({
             singularityPercentage,
             progressHeight

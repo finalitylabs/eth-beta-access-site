@@ -36,7 +36,8 @@ class PortalContainer extends Component {
                     <img src={consolesvg} />
 
                     <DropButton 
-                        dropAnimation={this.state.catDropAnimation} 
+                        dropAnimation={this.state.catDropAnimation}
+                         
                         className="popup-btn cat-popup-btn"
                     />
                     <DropButton 
