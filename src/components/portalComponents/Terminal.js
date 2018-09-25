@@ -13,7 +13,7 @@ class Portal extends Component {
         this.setState({
             consoleText: [
                 <Typing 
-                    key={this.state.consoleText.length}
+                    key={this.state.consoleText.length ? this.state.consoleText.length : 0}
                     speed={25} 
                     className="terminal-text">
                     E.T.H. <br></br><br></br> WELCOME, ETERNAL TIME HERO, <br></br> Reach the Point Of Singularity! <br></br> > Press "ETH for QRT" to purchase QRT <br></br> or <br></br> > Select 1 Cryptokitty (ID#) then drop it into the portal
