@@ -85,3 +85,24 @@
   left: 0;
   top: 0;
 }
+
+.kitty-count {
+  position: absolute;
+  left: 37%;
+  top: calc(55% + 2px);
+  color: #5BFFFC;
+  font-size: 1.8em;
+  padding: 0 20px;
+  background-color: #270F5D;
+}
+
+
+.QRT-count {
+  position: absolute;
+  left: calc(37% + 10px);
+  top: calc(79% - 3px);
+  color: #5BFFFC;
+  font-size: 1.4em;
+  padding: 0 20px;
+  background-color: #270F5D;
+}

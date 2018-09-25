@@ -3,7 +3,7 @@ import EA from './contracts/ETHAccess.json';
 
 const eaAddress = '0xe8931b96a36ea32efb0ff80da0571748295cb3ec'
 
-class api extends Component {
+class Api extends Component {
   constructor() {
       super()
       this.accessContract = window.web3.eth.contract(EA.abi)
@@ -55,4 +55,4 @@ class api extends Component {
   }
 }
 
-export default api;
+export default Api;

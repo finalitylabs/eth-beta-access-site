@@ -43,9 +43,9 @@ class PortalContainer extends Component {
                         dropAnimation={this.state.ethDropAnimation}
                         className="popup-btn eth-popup-btn"
                     />
-                    {/* <KittyCount/>
+                    <KittyCount/>
                     <QRTCount/>
-                    <KittyIdInput/> */}
+                    <KittyIdInput/>
 
                     <Portal />
                     <Coin ref={ref => !this.state.coinAnimation && this.setState({coinAnimation: ref})}/>

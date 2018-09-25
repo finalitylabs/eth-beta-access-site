@@ -1,21 +1,26 @@
 import React, { Component } from 'react';
+import Api from '../../Api';
 
-class DropButtons extends Component {
+class KittyCount extends Component {
     constructor(props) {
         super(props);
+        this.state = {
+            kittyCount: ""
+        }
     }
-    handleDropButtonClick() {
-        this.props.dropRef.clickHandler();
+    componentDidMount = async () => {
+        const api =  new Api();
+        const kittyCount = await api.getPortalKittyCount();
+        this.setState({
+            kittyCount
+        })
     }
 
     render() {
         return (
-            <div 
-                onClick={() => this.handleDropButtonClick()} 
-                className={this.props.className}
-            />
+            <div className="kitty-count">{this.state.kittyCount}</div>
         );
     }
 }
 
-export default DropButtons;
+export default KittyCount;
