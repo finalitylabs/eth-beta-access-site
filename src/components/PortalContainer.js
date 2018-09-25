@@ -11,6 +11,7 @@ import DropButton from './portalComponents/DropButton';
 import QRTCount from './portalComponents/QRTCount';
 import KittyIdInput from './portalComponents/KittyIdInput';
 import KittyCount from './portalComponents/KittyCount';
+import Terminal from './portalComponents/Terminal';
 
 import ethForQRT from './ethForQRT';
 
@@ -36,7 +37,7 @@ class PortalContainer extends Component {
                 <div className="monitor">
                     <div className="remove-click-layer"/>
                     <img src={consolesvg} />
-
+                    <Terminal/>
                     <DropButton 
                         dropAnimation={this.state.catDropAnimation}
                         className="popup-btn cat-popup-btn"
@@ -49,7 +50,6 @@ class PortalContainer extends Component {
                     <KittyCount/>
                     <QRTCount/>
                     <KittyIdInput/>
-
                     <Portal />
                     <Coin ref={ref => !this.state.coinAnimation && this.setState({coinAnimation: ref})}/>
                     <DropAnimation 

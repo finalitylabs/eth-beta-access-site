@@ -136,3 +136,20 @@
 ::placeholder{
   color: #5BFFFC;
 }
+
+.terminal {
+  position: absolute;
+  width: 22.5%;
+  height: 22.6%;
+  background-image: linear-gradient(to top right, #030011 30%, #311371);
+  opacity: 1;
+  left: 18.1%;
+  top: 14.5%;
+  opacity: 0.4;
+  padding: 13px 20px;
+  font-size: 1vw;
+}
+
+.terminal-text {
+  color: #52C358;
+}
