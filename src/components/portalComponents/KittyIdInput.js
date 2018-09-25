@@ -15,13 +15,25 @@ class QRTCount extends Component {
             QRTCount
         })
     }
-    onInputChange = e => {
-        
+    onInputChange = event => {
+        event.preventDefault();
+        const isNumber = /^[0-9\b]+$/;
+        if (event.target.value == '' || isNumber.test(event.target.value)) {
+            this.setState({
+               kittyId: event.target.value
+            })
+        }
     } 
+    handleSubmit = event => {
+        event.preventDefault();
+        this.setState({
+            kittyId: ""
+        })
+    }
     render() {
         return (
-            <form>
-                <input type="text" value={this.state.kittyId} onChance={this.onInputChange}/>
+            <form className="kitty-id-form" onSubmit={this.handleSubmit}>
+                <input placeholder="#123456" type="text" value={this.state.kittyId} onChange={this.onInputChange}/>
             </form>
         );
     }
