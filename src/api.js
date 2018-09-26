@@ -79,7 +79,7 @@ class Api extends Component {
       this.kittyInstance.approve(eaAddress, id, {from: account}, (err, res) => {
         console.log(res)
         this.waitForConfirm(res, (err, res) => {
-          this.eaInstance.portalKitty({from: account}, (err, res) => {
+          this.eaInstance.portalKitty(id, {from: account}, (err, res) => {
             resolve(res)
           })
         })
@@ -93,7 +93,7 @@ class Api extends Component {
 
     if(receipt == null) {
       await window.setTimeout(1000)
-      await this.waitForConfirm(txHash)
+      await this.waitForConfirm(txHash, cb)
     } else {
       console.log('found tx')
       cb(null, 'found')
