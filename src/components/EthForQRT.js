@@ -1,4 +1,4 @@
-import Api from '../Api';
+import Api from '../api';
 import React from 'react';
 const ethForQRT = async (terminal) => {
     return new Promise (async (resolve)=> {

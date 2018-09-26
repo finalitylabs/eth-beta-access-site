@@ -13,7 +13,7 @@ import KittyIdInput from './portalComponents/KittyIdInput';
 import KittyCount from './portalComponents/KittyCount';
 import Terminal from './portalComponents/Terminal';
 
-import ethForQRT from './ethForQRT';
+import ethForQRT from './EthForQRT';
 
 import consolesvg from '../assets/presale-groups3_main.svg';
 

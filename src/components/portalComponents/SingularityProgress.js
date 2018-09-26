@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import Api from './../../Api';
+import Api from './../../api';
 
 class Portal extends Component {
     constructor(props) {
