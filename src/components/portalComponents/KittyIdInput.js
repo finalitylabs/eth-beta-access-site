@@ -9,16 +9,18 @@ class QRTCount extends Component {
         const api = new Api();
         const isNumber = /^[0-9\b]+$/;
 
-        if (event.target.value.length < 7){
-            if (event.target.value == '' || isNumber.test(event.target.value)) {
-                this.props.setParentState("kittyId", event.target.value)
-            }
-        } else {
+        if ((event.target.value == '' || isNumber.test(event.target.value)) && event.target.value.length < 7) {
+            this.props.setParentState("kittyId", event.target.value)
+        }
+
+
+        if (event.target.value.length === 6) {
             api.getKittyImageById(this.props.kittyId).then((res) =>{
                 this.props.setParentState("kittyImg", res)
-                this.props.terminal.addTerminalText("We've found your kitty...")
+                this.props.terminal.addTerminalText("We've found your kitty, click on 'DROP KITTIES' to send it...")
             })
         }
+
     } 
     handleSubmit = event => {
         event.preventDefault();
