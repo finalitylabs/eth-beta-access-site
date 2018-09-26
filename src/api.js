@@ -64,7 +64,6 @@ class Api extends Component {
         mode: "cors", // no-cors, cors, *same-origin
       })
       .then(res => {
-        console.log(res);
         return res.json();
       })
       .then(json => {

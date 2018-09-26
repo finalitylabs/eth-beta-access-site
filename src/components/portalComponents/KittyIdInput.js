@@ -13,7 +13,6 @@ class QRTCount extends Component {
             this.props.setParentState("kittyId", event.target.value)
         }
 
-
         if (event.target.value.length === 6) {
             api.getKittyImageById(this.props.kittyId).then((res) =>{
                 this.props.setParentState("kittyImg", res)
