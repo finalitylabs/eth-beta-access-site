@@ -14,6 +14,7 @@ import KittyCount from './portalComponents/KittyCount';
 import Terminal from './portalComponents/Terminal';
 
 import ethForQRT from './EthForQRT';
+import kittyForGrunt from './KittyForGrunt';
 
 import consolesvg from '../assets/presale-groups3_main.svg';
 
@@ -42,6 +43,8 @@ class PortalContainer extends Component {
 
                     <DropButton 
                         dropAnimation={this.state.catDropAnimation}
+                        transactionFunction={kittyForGrunt}
+                        terminal={this.state.terminal}
                         className="popup-btn cat-popup-btn"
                         />
                     <DropButton 

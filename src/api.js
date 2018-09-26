@@ -1,13 +1,17 @@
 import { Component } from 'react';
 import EA from './contracts/ETHAccess.json';
+import CK from './contracts/CKInterface.json';
 
 const eaAddress = '0xe8931b96a36ea32efb0ff80da0571748295cb3ec'
+const kittyAddress = '0x95ef2833688ee675dfc1350394619ae22b7667df'
 
 class Api extends Component {
   constructor() {
       super()
       this.accessContract = window.web3.eth.contract(EA.abi)
+      this.kittyContract = window.web3.eth.contract(CK.abi)
       this.eaInstance = this.accessContract.at(eaAddress)
+      this.kittyInstance = this.kittyContract.at(kittyAddress)
   }
 
   getNetwork() {
@@ -52,6 +56,31 @@ class Api extends Component {
         resolve(res)
       })
     })       
+  }
+
+  portalKitty(account, id) {
+    return new Promise(resolve => {
+      console.log(id)
+      this.kittyInstance.approve({from: account, value: window.web3.toWei('0.1')}, (err, res) => {
+        console.log('awaiting confirmation of kitty transfer approval')
+        this.waitForConfirm(res)
+        this.eaInstance.portalKitty({from: account}, (err, res) => {
+          resolve(res)
+        })
+      })
+    })
+  }
+
+  async waitForConfirm(txHash) {
+    //console.log('waiting for '+txHash.transactionHash+' to be confirmed...')
+    let receipt = await window.web3.eth.getTransactionReceipt(txHash.transactionHash)
+
+    if(receipt == null) {
+      await this.timeout(1000)
+      await this.waitForConfirm(txHash)
+    } else {
+      return
+    }
   }
 }
 
