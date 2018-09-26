@@ -12,6 +12,8 @@ import KittyIdInput from './portalComponents/KittyIdInput';
 import KittyCount from './portalComponents/KittyCount';
 import Terminal from './portalComponents/Terminal';
 
+import GroomingKittyModal from './modals/GroomingKittyModal';
+
 import ethForQRT from './EthForQRT';
 import kittyForGrunt from './KittyForGrunt';
 
@@ -29,7 +31,10 @@ class PortalContainer extends Component {
             coinAnimation: false,
             terminal: false,
             kittyId: "",
-            kittyImg: ""
+            kittyImg: "",
+            showKittyModal: false,
+            kittyModalHeader: "",
+            kittyModalParagraph: ""
         };
     }
 
@@ -49,12 +54,21 @@ class PortalContainer extends Component {
                     <img className="kitty-img" src={this.state.kittyImg}/>
                     <Terminal ref={ ref => !this.state.terminal && this.setState({terminal: ref})}/>
 
+                    <GroomingKittyModal
+                        kittyImg={this.state.kittyImg}
+                        showKittyModal={this.state.showKittyModal}
+                        header={this.state.kittyModalHeader}
+                        paragraph={this.state.kittyModalParagraph}
+                        setParentState={this.setDynamicState}
+                    />
+
                     <DropButton 
                         dropAnimation={this.state.catDropAnimation}
                         kittyId={this.state.kittyId}
                         transactionFunction={kittyForGrunt}
                         terminal={this.state.terminal}
                         className="popup-btn cat-popup-btn"
+                        setContainerState={this.setDynamicState}
                     />
                     <DropButton 
                         dropAnimation={this.state.ethDropAnimation}

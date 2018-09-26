@@ -66,6 +66,7 @@ class Api extends Component {
         mode: "cors", // no-cors, cors, *same-origin
       })
       .then(res => {
+        if (!res.ok) { throw res.statusText }
         return res.json();
       })
       .then(json => {
@@ -77,28 +78,34 @@ class Api extends Component {
   async portalKitty(account, id) {
     return new Promise(resolve => {
       this.kittyInstance.approve(eaAddress, id, {from: account}, (err, res) => {
-        console.log(res)
-        this.waitForConfirm(res, (err, res) => {
-          this.eaInstance.portalKitty(id, {from: account}, (err, res) => {
-            resolve(res)
-          })
-        })
+        resolve(res);
       })
     })
   }
 
-  async waitForConfirm(txHash, cb) {
-    console.log('waiting for '+txHash+' to be confirmed...')
-    let receipt = await this.ethjs.getTransactionReceipt(txHash)
+  waitForConfirm(account, id ,txHash) {
+    return new Promise(resolve => {
+      console.log('waiting for '+txHash+' to be confirmed...')
+      this.ethjs.getTransactionReceipt(txHash).then(receipt=>{
+        if(receipt == null) {
+          setTimeout(()=>{
+            this.waitForConfirm(account, id ,txHash)
+          },1000)
+        } else {
+          resolve("tx found")
+        }
+      })
+  
+    })
+  }
 
-    if(receipt == null) {
-      await window.setTimeout(1000)
-      await this.waitForConfirm(txHash, cb)
-    } else {
-      console.log('found tx')
-      cb(null, 'found')
-      return
-    }
+  async sendKitty(id, account) {
+    return new Promise(resolve => {
+      this.eaInstance.portalKitty(id, {from: account}, (err, res) => {
+        console.log('transaction gets finalized')
+        resolve(res)
+      })
+    })
   }
 }
 

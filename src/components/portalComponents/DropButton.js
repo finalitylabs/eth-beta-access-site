@@ -6,7 +6,7 @@ class DropButtons extends Component {
     }
 
     handleDropButtonClick = async () => {
-        const tx = await this.props.transactionFunction(this.props.terminal, this.props.kittyId);
+        const tx = await this.props.transactionFunction(this.props.terminal, this.props.kittyId, this.props.setContainerState);
         setTimeout(() => {
             this.props.dropAnimation.clickHandler();
         }, 2000);

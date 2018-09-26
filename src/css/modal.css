@@ -1,0 +1,85 @@
+.modal-container {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    z-index: 11;
+    overflow: hidden;
+}
+
+
+.modal-kitty {
+    width: 60%;
+    height: 60%;
+    display: block;
+    margin: auto;
+    -webkit-animation-name: wiggle;
+    -ms-animation-name: wiggle;
+    animation-delay: 1s;
+    -ms-animation-duration: 3s;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    -ms-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -ms-animation-timing-function: ease-in-out;
+}
+
+
+.modal-container.hide {
+    display: none!important;
+}
+.modal-container.show {
+    display: block!important;
+}
+.modal-container h1{
+    font-size: 20px;
+}
+.modal-container h1,p{
+    text-align: center;
+}   
+
+.modal-container .content {
+    background-color: white;
+    z-index: 10;
+    position: fixed;
+    width: 30%;
+    height: 50%;
+    left: 35%;
+    top: calc(50vh - 25%);
+}
+
+.blackground{
+    background-color: black;
+    opacity: 0.7;
+    width: 100vw;
+    height: 100vh;
+    z-index: 12;
+}
+
+@-webkit-keyframes wiggle {
+    0% {-webkit-transform: rotate(10deg);}
+    12% {-webkit-transform: rotate(-10deg);}
+    24% {-webkit-transform: rotate(20deg);}
+    36% {-webkit-transform: rotate(-5deg);}
+    48% {-webkit-transform: rotate(0deg);}
+    100% {-webkit-transform: rotate(0deg);}
+}
+  
+@-ms-keyframes wiggle {
+    0% {-webkit-transform: rotate(10deg);}
+    12% {-webkit-transform: rotate(-10deg);}
+    24% {-webkit-transform: rotate(20deg);}
+    36% {-webkit-transform: rotate(-5deg);}
+    48% {-webkit-transform: rotate(0deg);}
+    100% {-webkit-transform: rotate(0deg);}
+}
+  
+@keyframes wiggle {
+    0% {-webkit-transform: rotate(10deg);}
+    12% {-webkit-transform: rotate(-10deg);}
+    24% {-webkit-transform: rotate(20deg);}
+    36% {-webkit-transform: rotate(-5deg);}
+    48% {-webkit-transform: rotate(0deg);}
+    100% {-webkit-transform: rotate(0deg);}
+}
