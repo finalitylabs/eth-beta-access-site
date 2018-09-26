@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 
 import "./../css/portalSection.css";
 
-import Console from './svg/Console';
 import Portal from './animations/Portal';
 import Coin from './animations/Coin';
 
@@ -29,13 +28,14 @@ class PortalContainer extends Component {
             ethDropAnimation: false,
             coinAnimation: false,
             terminal: false,
-            kittyId: ""
+            kittyId: "",
+            kittyImg: ""
         };
     }
 
-    setKittyId = (idObj) => {
+    setDynamicState = (key, value) => {
         this.setState({
-            kittyId: idObj.kittyId
+            [key]: value
         })
     }
 
@@ -46,6 +46,7 @@ class PortalContainer extends Component {
                 <div className="monitor">
                     <div className="remove-click-layer"/>
                     <img src={consolesvg} />
+                    <img className="kitty-img" src={this.state.kittyImg}/>
                     <Terminal ref={ ref => !this.state.terminal && this.setState({terminal: ref})}/>
 
                     <DropButton 
@@ -63,7 +64,12 @@ class PortalContainer extends Component {
                     />
                     <KittyCount/>
                     <QRTCount/>
-                    <KittyIdInput kittyId={this.state.kittyId} setKittyId={this.setKittyId}/>
+                    <KittyIdInput 
+                        kittyId={this.state.kittyId} 
+                        setState={this.setKittyId}
+                        setParentState={this.setDynamicState}
+                        terminal={this.state.terminal}
+                    />
                     <Portal />
                     <Coin ref={ref => !this.state.coinAnimation && this.setState({coinAnimation: ref})}/>
                     <DropAnimation 

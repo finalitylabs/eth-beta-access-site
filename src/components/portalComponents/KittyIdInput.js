@@ -5,10 +5,18 @@ class QRTCount extends Component {
 
     onInputChange = event => {
         event.preventDefault();
+        
+        const api = new Api();
         const isNumber = /^[0-9\b]+$/;
-        if (event.target.value == '' || isNumber.test(event.target.value)) {
-            this.props.setKittyId({
-               kittyId: event.target.value
+
+        if (event.target.value.length < 7){
+            if (event.target.value == '' || isNumber.test(event.target.value)) {
+                this.props.setParentState("kittyId", event.target.value)
+            }
+        } else {
+            api.getKittyImageById(this.props.kittyId).then((res) =>{
+                this.props.setParentState("kittyImg", res)
+                this.props.terminal.addTerminalText("We've found your kitty...")
             })
         }
     } 

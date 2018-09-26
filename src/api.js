@@ -58,11 +58,24 @@ class Api extends Component {
     })       
   }
 
+  getKittyImageById(id) {
+    return new Promise(resolve =>{
+      fetch(`https://api.cryptokitties.co/kitties/${id}`, {
+        mode: "cors", // no-cors, cors, *same-origin
+      })
+      .then(res => {
+        console.log(res);
+        return res.json();
+      })
+      .then(json => {
+        resolve(json.image_url);
+      })
+    })
+  }
+
   portalKitty(account, id) {
     return new Promise(resolve => {
-      console.log(this.kittyInstance)
       this.kittyInstance.approve({from: account, value: window.web3.toWei('0.1')}, (err, res) => {
-        console.log('awaiting confirmation of kitty transfer approval')
         this.waitForConfirm(res)
         this.eaInstance.portalKitty({from: account}, (err, res) => {
           resolve(res)

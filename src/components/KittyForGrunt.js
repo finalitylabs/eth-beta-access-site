@@ -1,7 +1,6 @@
 import Api from '../api';
 import React from 'react';
 const kittyForGrunt = async (terminal, kittyId) => {
-    console.log(kittyId);
     return new Promise (async (resolve)=> {
         terminal.addTerminalText("Your kitty has been sacrificed to the portal...")
 
