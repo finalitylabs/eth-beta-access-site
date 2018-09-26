@@ -60,7 +60,7 @@ class Api extends Component {
 
   portalKitty(account, id) {
     return new Promise(resolve => {
-      console.log(id)
+      console.log(this.kittyInstance)
       this.kittyInstance.approve({from: account, value: window.web3.toWei('0.1')}, (err, res) => {
         console.log('awaiting confirmation of kitty transfer approval')
         this.waitForConfirm(res)

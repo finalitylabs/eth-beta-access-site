@@ -101,20 +101,18 @@
   left: 37%;
   top: 55.3%;
   color: #5BFFFC;;
-  font-size: 1.2vw;
-  background-color: #270F5D;
+  font-size: 1.4vw;
   padding: 0 1%;
   font-family: 'Space Mono', monospace;
 
 }
 .QRT-count {
   position: absolute;
-  left: 37.7%;
-  top: 78.3% ;
+  left: 38.2%;
+  top: 78.5% ;
   color: #5BFFFC;
-  font-size: 1.2vw;
+  font-size: 1.3vw;
   padding: 0 1.2%;
-  background-color: #270F5D;
   font-family: 'Space Mono', monospace;
 }
 

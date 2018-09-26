@@ -28,8 +28,15 @@ class PortalContainer extends Component {
             catDropAnimation: false,
             ethDropAnimation: false,
             coinAnimation: false,
-            terminal: false
+            terminal: false,
+            kittyId: ""
         };
+    }
+
+    setKittyId = (idObj) => {
+        this.setState({
+            kittyId: idObj.kittyId
+        })
     }
 
     render() {
@@ -43,10 +50,11 @@ class PortalContainer extends Component {
 
                     <DropButton 
                         dropAnimation={this.state.catDropAnimation}
+                        kittyId={this.state.kittyId}
                         transactionFunction={kittyForGrunt}
                         terminal={this.state.terminal}
                         className="popup-btn cat-popup-btn"
-                        />
+                    />
                     <DropButton 
                         dropAnimation={this.state.ethDropAnimation}
                         transactionFunction={ethForQRT}
@@ -55,7 +63,7 @@ class PortalContainer extends Component {
                     />
                     <KittyCount/>
                     <QRTCount/>
-                    <KittyIdInput/>
+                    <KittyIdInput kittyId={this.state.kittyId} setKittyId={this.setKittyId}/>
                     <Portal />
                     <Coin ref={ref => !this.state.coinAnimation && this.setState({coinAnimation: ref})}/>
                     <DropAnimation 
