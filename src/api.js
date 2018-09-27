@@ -45,9 +45,9 @@ class Api extends Component {
     })
   }
 
-  getPortalKittyCount() {
+  getPortalKittyCount(account) {
     return new Promise(resolve => {
-      this.eaInstance.participants('0x1e8524370b7caf8dc62e3effbca04ccc8e493ffe',(err, res) => {
+      this.eaInstance.participants(account,(err, res) => {
         resolve(res[1].toString())
       })
     })    
