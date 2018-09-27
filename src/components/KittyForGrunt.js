@@ -21,8 +21,8 @@ const kittyForGrunt = async (terminal, kittyId, setContainerState) => {
             
             const txFinalized = await api.sendKitty(account, kittyId);
             console.log("tx finalized, close modal", txFinalized)
+            
             setContainerState("showKittyModal", false);
-
             terminal.addTerminalText(`Your kitty grunt is on its way!`)
             resolve(txFinalized);
         }

@@ -2,6 +2,7 @@ import { Component } from 'react';
 import EA from './contracts/ETHAccess.json';
 import CK from './contracts/CKInterface.json';
 import Eth from 'ethjs';
+import { rejects } from 'assert';
 
 const eaAddress = '0xe8931b96a36ea32efb0ff80da0571748295cb3ec'
 const kittyAddress = '0x95ef2833688ee675dfc1350394619ae22b7667df'
@@ -82,15 +83,25 @@ class Api extends Component {
       })
     })
   }
-
-  waitForConfirm(account, id ,txHash) {
+  
+  timeOutPromise = (ms) => {
     return new Promise(resolve => {
+      setTimeout(() => {
+        resolve(true);
+      }, ms);
+    })
+  }
+  waitForConfirm(account, id ,txHash) {
+    return new Promise((resolve, reject) => {
       console.log('waiting for '+txHash+' to be confirmed...')
+      // console.log(this);
       this.ethjs.getTransactionReceipt(txHash).then(receipt=>{
         if(receipt == null) {
-          setTimeout(()=>{
-            this.waitForConfirm(account, id ,txHash)
-          },1000)
+          this.timeOutPromise(1000).then(()=>{
+            // console.log('timeout done')
+            this.waitForConfirm(account, id, txHash)
+          });
+          reject("Transaction not found try again in a second")
         } else {
           resolve("tx found")
         }
