@@ -27,7 +27,7 @@ class DropAnimation extends Component {
             progress:0
         });
         console.log(this.props.kittyId)
-        if (this.props.kittyId === false || this.props.kittyId === "") {
+        if (this.props.kittyId === false || this.props.kittyId === "" || typeof this.props.kittyId === 'undefined' ) {
             this.props.startCoinAnimation();
         }
     }

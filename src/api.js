@@ -3,7 +3,7 @@ import EA from './contracts/ETHAccess.json';
 import CK from './contracts/CKInterface.json';
 import Eth from 'ethjs';
 
-const eaAddress = '0xe8931b96a36ea32efb0ff80da0571748295cb3ec'
+const eaAddress = '0x14f00c2c0f9c40476bbf8fcd1b2dc2e91e371041'
 const kittyAddress = '0x95ef2833688ee675dfc1350394619ae22b7667df'
 
 class Api extends Component {
@@ -92,6 +92,7 @@ class Api extends Component {
             this.waitForConfirm(account, id ,txHash)
           },1000)
         } else {
+          console.log('tx found wait function')
           resolve("tx found")
         }
       })
