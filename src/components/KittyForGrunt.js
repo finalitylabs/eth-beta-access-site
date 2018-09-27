@@ -10,12 +10,13 @@ const kittyForGrunt = async (terminal, kittyId, setContainerState) => {
     
             const tx = await api.portalKitty(account, kittyId);
             setContainerState("showKittyModal", true);
-            setContainerState("kittyModalHeader", "Grooming your kitty");
+            setContainerState("kittyModalHeader", "Herding your kitty to the portal");
             setContainerState("kittyModalParagraph", "Please wait till the next Metamask transasction pops up.");
             
             
             const txFound = await api.waitForConfirm(account, kittyId, tx);
-            setContainerState("kittyModalHeader", "Kitty has been groomed");
+            console.log('after wait function')
+            setContainerState("kittyModalHeader", "Kitty is ready to portal jump");
             setContainerState("kittyModalParagraph", "Please accept the new metamask tx to finalize the transaction.");
             console.log(txFound);
             
