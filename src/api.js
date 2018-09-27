@@ -84,34 +84,52 @@ class Api extends Component {
     })
   }
   
-  timeOutPromise = (ms) => {
-    return new Promise(resolve => {
-      setTimeout(() => {
-        resolve(true);
-      }, ms);
-    })
-  }
-  waitForConfirm(account, id ,txHash) {
-    return new Promise((resolve, reject) => {
-      console.log('waiting for '+txHash+' to be confirmed...')
-      // console.log(this);
-      this.ethjs.getTransactionReceipt(txHash).then(receipt=>{
-        if(receipt == null) {
-          this.timeOutPromise(3000).then(()=>{
-            this.waitForConfirm(account, id, txHash)
-          });
-          reject("Transaction not found trying again in a second")
-        } else {
-          console.log('tx found wait function')
-          resolve("tx found")
-        }
-      })
+  // timeOutPromise = (ms) => {
+  //   return new Promise(resolve => {
+  //     setTimeout(() => {
+  //       resolve(true);
+  //     }, ms);
+  //   })
+  // }
+
+  // waitForConfirm(account, id ,txHash) {
+  //   return new Promise((resolve, reject) => {
+  //     console.log('waiting for '+txHash+' to be confirmed...')
+  //     // console.log(this);
+  //     this.ethjs.getTransactionReceipt(txHash).then(receipt=>{
+  //       if(receipt == null) {
+  //         this.timeOutPromise(3000).then(()=>{
+  //           this.waitForConfirm(account, id, txHash)
+  //         });
+  //         reject("Transaction not found trying again in a second")
+  //       } else {
+  //         console.log('tx found wait function')
+  //         resolve("tx found")
+  //       }
+  //     })
   
-    })
+  //   })
+  // }
+
+  async waitForConfirm(txHash) {
+    console.log('waiting for '+txHash+' to be confirmed...')
+    let receipt = await this.ethjs.getTransactionReceipt(txHash)
+
+    if(receipt == null) {
+      await this.timeout(1000)
+      await this.waitForConfirm(txHash)
+    } else {
+      return('found '+txHash)
+    }
   }
 
-  async sendKitty(id, account) {
+  timeout(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms))
+  }
+
+  async sendKitty(account, id) {
     return new Promise(resolve => {
+      console.log(id)
       this.eaInstance.portalKitty(id, {from: account}, (err, res) => {
         console.log('transaction gets finalized')
         resolve(res)
