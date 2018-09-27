@@ -97,11 +97,10 @@ class Api extends Component {
       // console.log(this);
       this.ethjs.getTransactionReceipt(txHash).then(receipt=>{
         if(receipt == null) {
-          this.timeOutPromise(1000).then(()=>{
-            // console.log('timeout done')
+          this.timeOutPromise(3000).then(()=>{
             this.waitForConfirm(account, id, txHash)
           });
-          reject("Transaction not found try again in a second")
+          reject("Transaction not found trying again in a second")
         } else {
           console.log('tx found wait function')
           resolve("tx found")
@@ -122,3 +121,7 @@ class Api extends Component {
 }
 
 export default Api;
+
+
+
+
