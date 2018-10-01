@@ -9,6 +9,13 @@ class Terminal extends Component {
         }
     }
 
+    scrollDown = () => {
+        const terminal = document.querySelector('.terminal');
+        if(terminal.scrollTop != terminal.scrollHeight){
+            terminal.scrollTop = terminal.scrollHeight;
+        }
+    }
+
     componentDidMount = () => {
         this.setState({
             consoleText: [
@@ -29,11 +36,15 @@ class Terminal extends Component {
                 <Typing 
                     key={this.state.consoleText.length}
                     speed={12} 
+                    onFinishedTyping={()=>clearInterval(this.interval)}
                     className="terminal-text"> 
                     > {newText}
                 </Typing>
             ]
         })
+        this.interval = setInterval(()=>{
+            this.scrollDown();
+        }, 100)
     }
     
     render() {
