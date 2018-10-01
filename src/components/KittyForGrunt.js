@@ -1,9 +1,11 @@
 import Api from '../api';
 import React from 'react';
+import terminalText from './../../terminalText.json';
+
 const kittyForGrunt = async (terminal, kittyId, setContainerState) => {
     return new Promise (async (resolve)=> {
         if (kittyId.length > 0) {
-            terminal.addTerminalText("Your kitty has been sacrificed to the portal...")
+            terminal.addTerminalText(terminalText.ON_KITTY_FOR_BETA_ACCESS_TRANSACTION_OPEN)
     
             const api = new Api();
             const account = await api.getAccount()[0];
@@ -12,7 +14,6 @@ const kittyForGrunt = async (terminal, kittyId, setContainerState) => {
             setContainerState("showKittyModal", true);
             setContainerState("kittyModalHeader", "Herding your kitty to the portal");
             setContainerState("kittyModalParagraph", "Please wait till the next Metamask transasction pops up.");
-            
             
             const txFound = await api.waitForConfirm(account, kittyId, tx);
             console.log('after wait function')
@@ -24,7 +25,7 @@ const kittyForGrunt = async (terminal, kittyId, setContainerState) => {
             console.log("tx finalized, close modal", txFinalized)
             
             setContainerState("showKittyModal", false);
-            terminal.addTerminalText(`Your kitty grunt is on its way!`)
+            terminal.addTerminalText(terminalText.ON_KITTY_FOR_BETA_ACCESS_TRANSACTION_SEND)
             resolve(txFinalized);
         }
     });

@@ -91,6 +91,7 @@ class Api extends Component {
       }, ms);
     })
   }
+
   waitForConfirm(account, id ,txHash) {
     return new Promise((resolve, reject) => {
       console.log('waiting for '+txHash+' to be confirmed...')
@@ -102,8 +103,8 @@ class Api extends Component {
           });
           reject("Transaction not found trying again in a second")
         } else {
-          console.log('tx found wait function')
-          resolve("tx found")
+          console.log("WaitForConfirmDone")
+          resolve("done");
         }
       })
   
@@ -112,7 +113,7 @@ class Api extends Component {
 
   async sendKitty(id, account) {
     return new Promise(resolve => {
-      this.eaInstance.portalKitty(id, {from: account}, (err, res) => {
+      this.eaInstance.portalKitty(id, 1, {from: account}, (err, res) => {
         console.log('transaction gets finalized')
         resolve(res)
       })
