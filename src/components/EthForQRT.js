@@ -1,6 +1,6 @@
 import Api from '../api';
 import React from 'react';
-import terminalText from './../../terminalText.json';
+import terminalText from './terminalText.json';
 
 const ethForQRT = async (terminal) => {
     return new Promise (async (resolve)=> {

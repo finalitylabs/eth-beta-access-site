@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Api from '../../api';
-import terminalText from './../../terminalText.json';
-
+import terminalText from './../terminalText.json';
 class QRTCount extends Component {
 
     onInputChange = event => {
@@ -23,7 +22,7 @@ class QRTCount extends Component {
 
         api.getKittyImageById(this.props.kittyId).then((res) =>{
             this.props.setParentState("kittyImg", res)
-            this.props.terminal.addTerminalText(terminalText.ON_KITY_FOUND)
+            this.props.terminal.addTerminalText(terminalText.ON_KITTY_FOUND)
         })
     }
     handleSubmit = event => {
