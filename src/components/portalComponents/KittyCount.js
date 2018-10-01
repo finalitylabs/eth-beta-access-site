@@ -10,7 +10,8 @@ class KittyCount extends Component {
     }
     componentDidMount = async () => {
         const api =  new Api();
-        const kittyCount = await api.getPortalKittyCount();
+        const account = await api.getAccount();
+        const kittyCount = await api.getPortalKittyCount(account);
         this.setState({
             kittyCount
         })

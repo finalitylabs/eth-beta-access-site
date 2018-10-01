@@ -17,13 +17,13 @@ class App extends Component {
     
     return (
       <div className="App">
-        {/* <NavBar /> */}
-        {/* <HeroSplash /> */}
-        {/* <Synopsis /> */}
+        <NavBar />
+        <HeroSplash />
+        <Synopsis />
         <PortalContainer />
-        {/* <Features /> */}
-        {/* <TechText /> */}
-        {/* <Roadmap /> */}
+        <Features />
+        <TechText />
+        <Roadmap />
         <Social />  
         
         
