@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import roadmap from '../assets/Roadmap.svg'
+import roadmap from '../assets/Roadmap.png'
 
 class Roadmap extends Component {
     render() {
