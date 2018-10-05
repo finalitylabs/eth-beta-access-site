@@ -93,6 +93,12 @@ font-family: 'Rajdhani', sans-serif;
   width: 100vw;
 }
 
+.logo {
+  margin-left: 30%;
+  position: absolute;
+  width: 70%;
+}
+
 #synopsis {
   display: flex;
   flex-direction: column;
