@@ -9,6 +9,10 @@ import hank from '../assets/FL_EternalTimeHeroes_CharacterProfiles_Hank.png';
 import c3bcBackground from '../assets/ETH_C3BC_Bg_NoCharacters.png';
 import runnerBackground from '../assets/ETH_Runner_Bg_NoCharacters.png';
 import postapocBackground from '../assets/ETH_PostApocalyptic_Bg_NoCharacters.png';
+import demVideo from '../assets/Gameplaydemo_v3LOW.mp4';
+
+import { DefaultPlayer as Video } from 'react-html5video';
+import 'react-html5video/dist/styles.css';
 
 
 class Features extends Component {
@@ -106,6 +110,18 @@ Once a mild-mannered kitty, Ruby burned one of her nine lives, falling into a va
                         </div>
                     </div>
                 </div>
+                <div className='feature-bgs'>
+                    <h2>Gameplay Demo Video </h2>
+                    <Video className='feature-video' autoPlay loop muted
+                        controls={['PlayPause', 'Seek', 'Time', 'Volume', 'Fullscreen']}
+                        poster="http://sourceposter.jpg"
+                        onCanPlayThrough={() => {
+                            // Do stuff
+                        }}>
+                        <source src={demVideo} type="video/mp4" />
+                        <track label="English" kind="subtitles" srcLang="en" src="http://source.vtt" default />
+                    </Video>
+                </div>    
             </div>
         );
     }
