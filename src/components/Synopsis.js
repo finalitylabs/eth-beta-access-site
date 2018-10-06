@@ -11,7 +11,7 @@ class Synopsis extends Component {
                 </p>
                 <img src={timeline} alt='Timeline' />
                 <p className='synopsislastp'>
-                Finality Labs’ Eternal Time Heroes is a strategic turn-based battle game.</p>
+                Finality Labs’ Eternal Time Heroes is a strategic turn-based battle game that uses blockchain based champions to assemble armies in search of glory. Before the battle begins, use the portal below to gain an early access token. Have some extra crypto kitties laying around being lazy? Throw one into the time fracture and see what comes out!</p>
             </div>
             
         );
