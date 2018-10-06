@@ -31,23 +31,26 @@ class Features extends Component {
                 <div className='feature-page'>
                     <div className='feature-col'>
                         <img src={elbrujo} />
-                        <h4>El Brujo</h4>
                         <p>
+                        El Brujo
+                        <br/><br/>
                         A true and tried master of the dark arts, El Brujo possesses exceptional magical powers that not only give him powerful attacks with damage dealt over time but also the noteable ability to self-heal. Not shabby for a 200 year old man.
                         </p>
                     </div>                    
                     <div className='feature-col'>
                         <img src={rowdy} />
-                        <h4>Rowdy</h4>
                         <p>
+                        Rowdy
+                        <br/><br/>
 What Rowdy lacks in size, she makes up in brains, agility and spunk. As a highly trained assassin with state of the arts weaponry and gear, she can melt down an opponent -- as long as she manages to stay on her feet.
 
                         </p>
                     </div> 
                     <div className='feature-col'>
                         <img src={bigboi} />
-                        <h4>Big Boi</h4>
                         <p>
+                        Big Boi
+                        <br/><br/>
 Big Boi is -- well, a big boy. A survivor of the apocalypse equipped with unorthodox attacks, he is not an opponent to underestimate. While he’s not exactly the most nimble hero, his durability is hard to match and his hits are definitely nothing to sneeze at.
 
                         </p>
@@ -57,8 +60,9 @@ Big Boi is -- well, a big boy. A survivor of the apocalypse equipped with unorth
                 <div className='feature-page'>
                     <div className='feature-col'>
                         <img src={bestia} />
-                        <h4>Bestia</h4>
                         <p>
+                        Bestia
+                        <br/><br/>
                         
 Although summoned by witchcraft, Bestia’s skillset really lies in being a grumpy, stinky cat. He has a penchant for knocking objects over (and into opponents) and a breath that kills -- literally.
 
@@ -66,8 +70,9 @@ Although summoned by witchcraft, Bestia’s skillset really lies in being a grum
                     </div>                    
                     <div className='feature-col'>
                         <img src={hank} />
-                        <h4>Hank</h4>
                         <p>
+                        Hank
+                        <br/><br/>
                         
 Pieced together in a cutting-edge laboratory, Hank is built to be a little walking killing machine. Equipped with taser-like nails and the ability to shoot laser beams, he has the potential to be a world-class soldier, as long as he doesn’t get distracted by snacks.
 
@@ -75,8 +80,9 @@ Pieced together in a cutting-edge laboratory, Hank is built to be a little walki
                     </div> 
                     <div className='feature-col'>
                         <img src={ruby} />
-                        <h4>Ruby</h4>
                         <p>
+                        Ruby
+                        <br/><br/>
 Once a mild-mannered kitty, Ruby burned one of her nine lives, falling into a vat of radioactive waste some time during the apocalypse and morphed into a little hellion with newly evolved slashing speed, toxic projectile hairball vomits, and a chip on her shoulder.
 
                         </p>
