@@ -8,6 +8,13 @@ overflow-x: hidden;
 font-family: 'Rajdhani';
 }
 
+h1 { font-weight:normal; }
+h2 { font-weight:normal; }
+h3 { font-weight:normal; }
+h4 { font-weight:normal; }
+
+/*p { text-align: left; }*/
+
 .App {
   font-family: 'Rajdhani';
   position: relative;
@@ -22,7 +29,7 @@ font-family: 'Rajdhani';
 .App h1 {
   font-family: 'Rajdhani';
   font-size: 36pt;
-  line-height: 24px;
+  line-height: 28px;
 }
 
 .email {
@@ -30,7 +37,7 @@ font-family: 'Rajdhani';
   text-decoration: none;
   color: white;
   font-size: 12px;
-  line-height: 20px;
+  line-height: 28px;
   text-align: center;
   position: absolute;
   bottom: 0.5em;
@@ -119,8 +126,8 @@ font-family: 'Rajdhani';
 }
 
 #synopsis p {
-  text-align: center; 
-  line-height: 24px;
+  text-align: left; 
+  line-height: 28px;
   padding-left: 150px;
   padding-right: 150px;
 }
@@ -190,6 +197,10 @@ font-family: 'Rajdhani';
   font-family: 'Rajdhani';
 }
 
+/*#features p {
+  text-align: left; 
+}*/
+
 .feature-desc {
   display: flex;
   flex-direction: column;
@@ -201,7 +212,8 @@ font-family: 'Rajdhani';
   margin-top: 40px;
   padding-left: 150px;
   padding-right: 150px;
-  line-height: 24px;
+  line-height: 28px;
+  text-align: left;
 }
 
 .feature-page {
@@ -238,6 +250,8 @@ font-family: 'Rajdhani';
   color: white;
   text-align: center;
 }
+
+#techtext p { text-align: left; }
 
 #techtext h1 {
   padding-top: 75px;
@@ -291,7 +305,7 @@ font-family: 'Rajdhani';
 
 #social p {
   padding-left: 75px;
-  line-height: 24pt;
+  line-height: 28pt;
   font-size: 16pt;
 }
 
@@ -353,7 +367,7 @@ font-family: 'Rajdhani';
   position: absolute;
   display: block;
   padding: 2px 5px;
-  line-height: 20px;
+  line-height: 28px;
   right: -10px;
   top: -10px;
   font-size: 24px;

@@ -5,7 +5,7 @@ class Roadmap extends Component {
     render() {
         return (
             <div id='roadmap'>
-                <h1>Roadmap</h1>
+                <h1>ROADMAP</h1>
                 
                 <img src={roadmap} alt='roadmap' />
                 

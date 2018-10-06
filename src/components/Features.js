@@ -16,18 +16,14 @@ class Features extends Component {
         return (
             <div id='features'>
                 <div className='feature-desc'>
-                    <h1>Beta Access Game Features</h1>
+                    <h1>BETA ACCESS GAME FEATURES</h1>
                     <p>
                         With the purchase of a QRT token and / or the portal conversion of a CryptoKitty, players will gain both game access to the Beta version as well as the official release of Eternal Time Heroes (E.T.H.).
 
                         A QRT token purchase comes with a limited edition, legendary hero from one of E.T.H.’s original three timelines. Similarly, a portal conversion of a CryptoKitty comes with a moderately rare CryptoKitties-inspired grunt. But why choose between the two options when you can do both and start building your battle forces?
-                    </p>
-                    <p>
-
+                        <br/><br/>
                         *Note: While the Kitty Conversion Portal will remain open post-Beta, the three legendary heroes listed below are only available through E.T.H.’s Beta Access sale.
-
-                    </p>
-                    <p>
+                        <br/><br/>
                         What kind of a fighter are you and where does your allegiance lie? Are you ready to find out?
                     </p>
                 </div>
