@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import header from '../assets/Header.svg';
+import header from '../assets/Header.png';
 import logo from '../assets/logo/Logo animation_00149.png';
 
 class HeroSplash extends Component {

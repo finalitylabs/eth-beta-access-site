@@ -18,7 +18,7 @@ h4 { font-weight:normal; }
 .App {
   font-family: 'Rajdhani';
   position: relative;
-  background: linear-gradient(rgb(4, 0, 41) 0%, rgb(141, 0, 160) 150%);
+  /*background: linear-gradient(rgb(4, 0, 41) 0%, rgb(141, 0, 160) 150%);*/
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -88,10 +88,10 @@ h4 { font-weight:normal; }
   justify-content: center;
   width: 100%;
   height: 100vh;
-  background: black;
+  background: white;
   color: cyan;
   z-index: 1;
-  margin-top: 35px;
+  margin-top: 75px;
 }
 
 #herosplash svg {
