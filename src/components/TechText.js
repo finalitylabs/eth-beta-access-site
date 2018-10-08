@@ -7,7 +7,7 @@ class TechText extends Component {
         return (
             <div id='techtext'>
                 <h1>TECHNICAL INFORMATION</h1>
-                <p>A core design goal of E.T.H. is to reduce the cost of interacting with the blockchain and avoid the same issues that other Ethereum games have presented in the past. To accomplish this, E.T.H. is built on top of the latest theory in Ethereum scalability research. </p>
+                <p>A core design goal of E.T.H. is to reduce the cost of interacting with the blockchain and avoid the same issues that other Ethereum games have presented in the past. Reducing "on-chain" transactions with "layer2" scalability solutions increases transaction throughput so players don't have to wait for miners to confirm their actions. To accomplish this, E.T.H. is built on top of the latest theory in Ethereum scalability research. </p>
                 <img src={plasma} />
                 <br/>
                 <h2>State-Channels</h2>
