@@ -20,7 +20,8 @@
     left: 0;
     top: 0;
     background-color: rgba(0,0,0,0.6);
-    z-index: 10;
+    z-index: 21;
+    position: fixed;
 }
   
 .metamask-installed .info-section {

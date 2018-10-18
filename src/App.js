@@ -18,8 +18,8 @@ class App extends Component {
     
     return (
       <div className="App">
-        <Web3Check/>
-        {/* <NavBar />
+        <Web3Check />
+        <NavBar />
         <HeroSplash />
         <Synopsis />
         <PortalContainer />
@@ -27,7 +27,6 @@ class App extends Component {
         <TechText />
         <Roadmap />
         <Social />  
-         */}
         
       </div>
     );
