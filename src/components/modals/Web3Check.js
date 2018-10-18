@@ -32,7 +32,7 @@ class Web3Check extends Component {
             this.setState({
                 metamaskInstalled: !!web3,
                 metamaskLoggedin: account.length > 0,
-                mainnet: (network == 1)
+                mainnet: (network == 4)
             })
         } else {
             this.setState({
