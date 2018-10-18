@@ -10,11 +10,13 @@ const kittyAddress = '0x95ef2833688ee675dfc1350394619ae22b7667df'
 class Api extends Component {
   constructor() {
       super()
-      this.ethjs = new Eth(window.web3.currentProvider)
-      this.accessContract = window.web3.eth.contract(EA.abi)
-      this.kittyContract = window.web3.eth.contract(CK.abi)
-      this.eaInstance = this.accessContract.at(eaAddress)
-      this.kittyInstance = this.kittyContract.at(kittyAddress)
+      if (window.web3) {
+        this.ethjs = new Eth(window.web3.currentProvider)
+        this.accessContract = window.web3.eth.contract(EA.abi)
+        this.kittyContract = window.web3.eth.contract(CK.abi)
+        this.eaInstance = this.accessContract.at(eaAddress)
+        this.kittyInstance = this.kittyContract.at(kittyAddress)
+      }
   }
 
   getNetwork() {
