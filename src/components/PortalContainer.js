@@ -87,11 +87,13 @@ class PortalContainer extends Component {
                     <Portal />
                     <Coin ref={ref => !this.state.coinAnimation && this.setState({coinAnimation: ref})}/>
                     <DropAnimation 
+                        coinAnimation={false}
                         animationData={catAnimationData} 
                         ref={ref => !this.state.catDropAnimation && this.setState({catDropAnimation: ref})}
                         startCoinAnimation = {this.state.coinAnimation.startAnimation}
                     />
                     <DropAnimation 
+                        coinAnimation={true}
                         animationData={ethAnimationData} 
                         ref={ref => !this.state.ethDropAnimation && this.setState({ethDropAnimation: ref})}
                         startCoinAnimation = {this.state.coinAnimation.startAnimation}

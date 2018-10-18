@@ -8,8 +8,13 @@ const ethForQRT = async (terminal) => {
         const api = new Api();
         const account = await api.getAccount()[0];
         const tx = await api.purchaseQRT(account);
-        resolve(tx);
-        terminal.addTerminalText(terminalText.ON_ETH_FOR_QRT_TRANSACTION_SEND)
+        if (tx.res) {
+            resolve(tx);
+            terminal.addTerminalText(terminalText.ON_ETH_FOR_QRT_TRANSACTION_SEND)
+        } else {
+            resolve(false);
+            terminal.addTerminalText(terminalText.ON_TRANSACTION_REJECTED)
+        }
     });
 
 }

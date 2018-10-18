@@ -58,7 +58,7 @@ class Api extends Component {
   purchaseQRT(account) {
     return new Promise(resolve => {
       this.eaInstance.purchaseQRTbeta({from: account, value: window.web3.toWei('0.1')}, (err, res) => {
-        resolve(res)
+        resolve({"res": res})
       })
     })       
   }
@@ -81,7 +81,7 @@ class Api extends Component {
   async portalKitty(account, id) {
     return new Promise(resolve => {
       this.kittyInstance.approve(eaAddress, id, {from: account}, (err, res) => {
-        resolve(res);
+        resolve({"res": res});
       })
     })
   }
@@ -116,7 +116,7 @@ class Api extends Component {
       console.log(id)
       this.eaInstance.portalKitty(id, {from: account}, (err, res) => {
         console.log('transaction gets finalized')
-        resolve(res)
+        resolve({"res": res})
       })
     })
   }

@@ -18,15 +18,15 @@ class App extends Component {
     
     return (
       <div className="App">
-        <Web3Check />
+        {/* <Web3Check />
         <NavBar />
         <HeroSplash />
-        <Synopsis />
+        <Synopsis /> */}
         <PortalContainer />
-        <Features />
+        {/* <Features />
         <TechText />
         <Roadmap />
-        <Social />  
+        <Social />   */}
         
       </div>
     );
