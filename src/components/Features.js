@@ -23,11 +23,11 @@ class Features extends Component {
                 <div className='feature-desc'>
                     <h1>BETA ACCESS GAME FEATURES</h1>
                     <p>
-                        With the purchase of a beta access token and / or the portal conversion of a CryptoKitty, players will gain both access to the Beta builds / stress tests, as well as the official release of Eternal Time Heroes (E.T.H.). Access tokens operate as a voucher and whoever holds the private key owns the game account.
+                        By using the portal to pre-order access to E.T.H. you will receive a beta access token and / or the portal conversion of a CryptoKitty. With an E.T.H. token, players will gain both access to the Beta builds / stress tests, as well as the official release of Eternal Time Heroes. E.T.H. Access tokens operate as a voucher and the holder of the private key owns the game account.
 
-                        A beta access token purchase also comes with a limited edition, legendary hero from one of E.T.H.’s original three timelines. Similarly, a portal conversion of a CryptoKitty comes with a moderately rare CryptoKitties-inspired grunt. But why choose between the two options when you can do both and start building your battle forces?
+                        Pre-ordering also comes with a limited edition, legendary hero from one of E.T.H.’s original three timelines. Similarly, a portal conversion of a CryptoKitty comes with a moderately rare CryptoKitties-inspired grunt. But why choose between the two options when you can do both and start building your battle forces?
                         <br/><br/>
-                        *Note: While the Kitty Conversion Portal will remain open post-Beta, the three legendary heroes listed below are only available through E.T.H.’s Beta Access sale.
+                        *Note: While the Kitty Conversion Portal will remain open post-Beta, the three legendary heroes listed below are only available through E.T.H.’s Beta Access sale. Once the point of singularity on the portal is reached, the three pre-sale heroes will no longer be minted.
                         <br/><br/>
                         What kind of a fighter are you and where does your allegiance lie? Are you ready to find out?
                     </p>
