@@ -8,6 +8,10 @@ overflow-x: hidden;
 font-family: 'Rajdhani';
 }
 
+body p {
+  line-height: 28px;
+}
+
 h1 { font-weight:normal; }
 h2 { font-weight:normal; }
 h3 { font-weight:normal; }

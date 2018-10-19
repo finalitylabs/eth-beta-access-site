@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Space+Mono');
-
+.kitty-img{
+  height: 100%;
+}
 #portal-main{
   z-index: 10;
 }
@@ -52,9 +54,9 @@
 
 #coin-animation{
   position: absolute;
-  top: calc(73% - 5px);
-  width: calc(19% + 7px);
-  left: calc(15% + 6px);
+  top: 72.4%;
+  width: 19.3%;
+  left: 15.375%;
 }
 
 #coin-animation > div{
@@ -71,7 +73,7 @@
 
 .percentage {
   left: 30.55%;
-  top: 39.3%;
+  top: 40.8%;
   width: 9%;
   text-align: center;
   position: absolute;
@@ -113,7 +115,7 @@
   margin: 0;
   position: absolute;
   left: 37%;
-  top: 55.3%;
+  top: 56.8%;
   color: #5BFFFC;;
   font-size: 1.4vw;
   padding: 0 1%;
@@ -123,7 +125,7 @@
 .QRT-count {
   position: absolute;
   left: 38.2%;
-  top: 78.5% ;
+  top: 79.9% ;
   color: #5BFFFC;
   font-size: 1.3vw;
   padding: 0 1.2%;
@@ -133,25 +135,22 @@
 .kitty-id-form {
   z-index: 3;
   position: absolute;
-  left: 18.6%;
-  top: 59%;
+  left: 18.9%;
+  top: 58.8%;
+  line-height: 0;
   width: 3%;
   height: 3%;
   width: 10%;
   font-family: 'Space Mono', monospace;
-}
-.kitty-id-form input{
-  background-image: linear-gradient(to right, #050214 , #3E178B);
+  background-color: transparent;
   border: none;
-  width: 100%;
-  height: 100%;
   color: #5BFFFC;
   padding: 0;
-  padding-left: 5%;
-  font-size: 1.4vw;
+  padding-left: 0.1%;
+  font-size: 1.6vw;
   font-family: 'Space Mono', monospace;
-
 }
+
 
 ::placeholder{
   color: #5BFFFC;
@@ -162,15 +161,16 @@
 .terminal {
   position: absolute;
   width: 20.2%;
-  height: 18.7%;
+  height: 19.7%;
   background-image: linear-gradient(to top right, #030011 30%, #311371);
   left: 18.1%;
   top: 15%;
   /* opacity: 0.4; */
-  padding: 13px 20px;
+  padding: 0.5% 1%;
   font-size: 0.8vw;
   overflow-y: scroll;
   z-index: 3;
+  line-height: 1.6vw;
 }
 
 .terminal-text {
@@ -190,4 +190,8 @@
 ::-webkit-scrollbar {
   width: 0px;
   background: transparent; /* make scrollbar transparent */
+}
+
+.kitty-count, .QRT-count, .percentage {
+  line-height: 0;
 }
