@@ -60,7 +60,7 @@
 
 #coin-animation{
   position: absolute;
-  top: 72.6%;
+  top: 73%;
   width: 19.3%;
   left: 15.375%;
 }
@@ -121,7 +121,7 @@
   margin: 0;
   position: absolute;
   left: 37%;
-  top: 56.8%;
+  top: 57.3%;
   color: #5BFFFC;;
   font-size: 1.4vw;
   padding: 0 1%;
@@ -131,7 +131,7 @@
 .QRT-count {
   position: absolute;
   left: 38.2%;
-  top: 79.9% ;
+  top: 80.6% ;
   color: #5BFFFC;
   font-size: 1.3vw;
   padding: 0 1.2%;
@@ -142,7 +142,7 @@
   z-index: 3;
   position: absolute;
   left: 18.9%;
-  top: 58.8%;
+  top: 59.2%;
   line-height: 0;
   width: 3%;
   height: 3%;
