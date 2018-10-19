@@ -13,7 +13,7 @@ class Synopsis extends Component {
                 <img src={timeline} alt='Timeline' />
                 <br/>
                 <p className='synopsislastp'>
-                Finality Labs’ Eternal Time Heroes is a strategic turn-based battle game that uses blockchain-based champions to assemble armies in search of glory. Want in on the action? Use the portal below to gain an early access token. Have some extra CryptoKitties laying around being lazy? Throw one into the time fracture and see what comes out!</p>
+                Finality Labs’ Eternal Time Heroes is a strategic turn-based battle game running on the Ethereum blockchain using custom Non-Fungible token standard champions to assemble armies in search of glory. Want in on the action? Use the portal below to gain an early access token. Have some extra CryptoKitties laying around being lazy? Throw one into the time fracture and see what comes out!</p>
             </div>
             
         );

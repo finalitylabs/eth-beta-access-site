@@ -24,7 +24,7 @@ class Terminal extends Component {
                     speed={12} 
                     onFinishedTyping={()=>clearInterval(this.interval)}
                     className="terminal-text">
-                    E.T.H. <br></br><br></br> WELCOME, ETERNAL TIME HERO, <br></br> Help us reach the Point Of Singularity! <br></br> > Click the "ETH for QRT" button to purchase a QRT token <br></br> or <br></br> > Surrender a CryptoKitty to the portal by entering the CryptoKitty (ID#) and clicking the "Drop Kitties" button
+                    E.T.H. <br></br><br></br> WELCOME, ETERNAL TIME HERO, <br></br> Help us reach the Point Of Singularity! <br></br> > Click the "ETH for QRT" button to purchase a beta access QRT token <br></br> or <br></br> > Surrender a CryptoKitty to the portal by entering the CryptoKitty (ID#) and clicking the "Drop Kitties" button
                 </Typing>
             ]
         })
