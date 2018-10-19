@@ -51,7 +51,7 @@ class PortalContainer extends Component {
                 <p className="portal-info">Use the portal to either exchange a CryptoKitty or some Ethereum in exchange for beta access to the game and unlock a character exclusive to people participating in the beta sale. </p>
                 <div className="monitor">
                     <div className="remove-click-layer"/>
-                    <img src={consolesvg} />
+                    <img className="console-svg" src={consolesvg} />
                     <img className="kitty-img" src={this.state.kittyImg}/>
                     <Terminal ref={ ref => !this.state.terminal && this.setState({terminal: ref})}/>
 

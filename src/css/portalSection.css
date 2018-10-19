@@ -2,9 +2,9 @@
 .kitty-img{
   height: 100%;
 }
-
-.monitor {
-  background-color: #20868D;
+.console-svg {
+  height: 100%;
+  display: block 
 }
 
 #portal-main{
