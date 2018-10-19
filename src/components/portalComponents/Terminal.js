@@ -22,12 +22,15 @@ class Terminal extends Component {
                 <Typing 
                     key={this.state.consoleText.length ? this.state.consoleText.length : 0}
                     speed={12} 
+                    onFinishedTyping={()=>clearInterval(this.interval)}
                     className="terminal-text">
                     E.T.H. <br></br><br></br> WELCOME, ETERNAL TIME HERO, <br></br> Help us reach the Point Of Singularity! <br></br> > Click the "ETH for QRT" button to purchase a QRT token <br></br> or <br></br> > Surrender a CryptoKitty to the portal by entering the CryptoKitty (ID#) and clicking the "Drop Kitties" button
                 </Typing>
             ]
         })
-    }
+        this.interval = setInterval(()=>{
+            this.scrollDown();
+        }, 100)    }
 
     addTerminalText = (newText) => {
         this.setState({

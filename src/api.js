@@ -10,11 +10,13 @@ const kittyAddress = '0x95ef2833688ee675dfc1350394619ae22b7667df'
 class Api extends Component {
   constructor() {
       super()
-      this.ethjs = new Eth(window.web3.currentProvider)
-      this.accessContract = window.web3.eth.contract(EA.abi)
-      this.kittyContract = window.web3.eth.contract(CK.abi)
-      this.eaInstance = this.accessContract.at(eaAddress)
-      this.kittyInstance = this.kittyContract.at(kittyAddress)
+      if (window.web3) {
+        this.ethjs = new Eth(window.web3.currentProvider)
+        this.accessContract = window.web3.eth.contract(EA.abi)
+        this.kittyContract = window.web3.eth.contract(CK.abi)
+        this.eaInstance = this.accessContract.at(eaAddress)
+        this.kittyInstance = this.kittyContract.at(kittyAddress)
+      }
   }
 
   getNetwork() {
@@ -56,7 +58,7 @@ class Api extends Component {
   purchaseQRT(account) {
     return new Promise(resolve => {
       this.eaInstance.purchaseQRTbeta({from: account, value: window.web3.toWei('0.1')}, (err, res) => {
-        resolve(res)
+        resolve({"res": res})
       })
     })       
   }
@@ -79,7 +81,7 @@ class Api extends Component {
   async portalKitty(account, id) {
     return new Promise(resolve => {
       this.kittyInstance.approve(eaAddress, id, {from: account}, (err, res) => {
-        resolve(res);
+        resolve({"res": res});
       })
     })
   }
@@ -114,7 +116,7 @@ class Api extends Component {
       console.log(id)
       this.eaInstance.portalKitty(id, {from: account}, (err, res) => {
         console.log('transaction gets finalized')
-        resolve(res)
+        resolve({"res": res})
       })
     })
   }

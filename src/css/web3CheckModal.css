@@ -1,0 +1,42 @@
+.hide {
+    display: none;
+}
+.show {
+    display: block;
+}
+
+.info-section {
+    width: 40%;
+    height: auto;
+    background-color: white;
+}
+.info-section h1{
+    line-height: normal;
+}
+.metamask-installed {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 21;
+    position: fixed;
+}
+  
+.metamask-installed .info-section {
+    background-color: white;
+    position: absolute;
+    margin: auto;
+    top: 30%;
+    width: 40%;
+    left: 30%;
+    text-align: center;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 13px 0px rgba(255,255,255,0.2);
+    -moz-box-shadow: 0px 0px 13px 0px rgba(255,255,255,0.2);
+    box-shadow: 0px 0px 13px 0px rgba(255,255,255,0.2);
+}
+.metamask-installed img{
+    width: 50%;
+}

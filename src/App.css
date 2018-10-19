@@ -8,6 +8,10 @@ overflow-x: hidden;
 font-family: 'Rajdhani';
 }
 
+body p {
+  line-height: 28px;
+}
+
 h1 { font-weight:normal; }
 h2 { font-weight:normal; }
 h3 { font-weight:normal; }
@@ -55,6 +59,10 @@ h4 { font-weight:normal; }
   color: white;
   z-index: 20;
   overflow: hidden;
+}
+
+#animated-logo {
+  height: 100%;
 }
 
 #navbar a {
@@ -246,8 +254,9 @@ h4 { font-weight:normal; }
 }
 
 .feature-col img {
-  padding-left: 30px;
   width: 275px;
+  margin: auto;
+  display: block;
 }
 
 .feature-col h4 {

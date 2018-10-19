@@ -10,11 +10,15 @@ class KittyCount extends Component {
     }
     componentDidMount = async () => {
         const api =  new Api();
-        const account = await api.getAccount();
-        const kittyCount = await api.getPortalKittyCount(account);
-        this.setState({
-            kittyCount
-        })
+        if (window.web3) {
+            const account = await api.getAccount();
+            if (account.length > 0) {
+                const kittyCount = await api.getPortalKittyCount(account);
+                this.setState({
+                    kittyCount
+                })
+            }
+        }
     }
 
     render() {

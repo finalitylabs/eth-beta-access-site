@@ -47,10 +47,11 @@ class PortalContainer extends Component {
     render() {
         return (
             <div id="portal-main">
-
+                <h1 className="portal-header">BETA ACCESS PORTAL</h1>
+                <p className="portal-info">Use the portal to either exchange a CryptoKitty or some Ethereum in exchange for beta access to the game and unlock a character exclusive to people participating in the beta sale. </p>
                 <div className="monitor">
                     <div className="remove-click-layer"/>
-                    <img src={consolesvg} />
+                    <img className="console-svg" src={consolesvg} />
                     <img className="kitty-img" src={this.state.kittyImg}/>
                     <Terminal ref={ ref => !this.state.terminal && this.setState({terminal: ref})}/>
 
@@ -87,11 +88,13 @@ class PortalContainer extends Component {
                     <Portal />
                     <Coin ref={ref => !this.state.coinAnimation && this.setState({coinAnimation: ref})}/>
                     <DropAnimation 
+                        coinAnimation={false}
                         animationData={catAnimationData} 
                         ref={ref => !this.state.catDropAnimation && this.setState({catDropAnimation: ref})}
                         startCoinAnimation = {this.state.coinAnimation.startAnimation}
                     />
                     <DropAnimation 
+                        coinAnimation={true}
                         animationData={ethAnimationData} 
                         ref={ref => !this.state.ethDropAnimation && this.setState({ethDropAnimation: ref})}
                         startCoinAnimation = {this.state.coinAnimation.startAnimation}

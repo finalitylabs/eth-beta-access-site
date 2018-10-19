@@ -10,11 +10,15 @@ class QRTCount extends Component {
     }
     componentDidMount = async () => {
         const api =  new Api();
-        const account = await api.getAccount();
-        const QRTCount = await api.getParticipantQRTCount(account[0]);
-        this.setState({
-            QRTCount
-        })
+        if (window.web3) {
+            const account = await api.getAccount();
+            if (account.length > 0) {
+                const QRTCount = await api.getParticipantQRTCount(account[0]);
+                this.setState({
+                    QRTCount
+                })
+            }
+        }
     }
 
     render() {

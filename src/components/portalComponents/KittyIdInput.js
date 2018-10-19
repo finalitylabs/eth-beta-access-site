@@ -33,9 +33,7 @@ class QRTCount extends Component {
     }
     render() {
         return (
-            <form className="kitty-id-form" onSubmit={this.handleSubmit}>
-                <input placeholder="#123456" type="text" value={this.props.kittyId} onChange={this.onInputChange}/>
-            </form>
+            <input className="kitty-id-form" placeholder="#123456" type="text" value={this.props.kittyId} onChange={this.onInputChange}/>
         );
     }
 }

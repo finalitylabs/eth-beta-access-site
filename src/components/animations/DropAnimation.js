@@ -26,9 +26,9 @@ class DropAnimation extends Component {
         this.setState({ 
             progress:0
         });
-        console.log(this.props.kittyId)
-        if (this.props.kittyId === false || this.props.kittyId === "" || typeof this.props.kittyId === 'undefined' ) {
-            //this.props.startCoinAnimation();
+        console.log(this.props.coinAnimation);
+        if (this.props.coinAnimation) {
+            this.props.startCoinAnimation();
             // this still bugs, need to find a better element or make a flag maybe
         }
     }
