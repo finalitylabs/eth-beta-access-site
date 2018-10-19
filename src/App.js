@@ -10,6 +10,9 @@ import Roadmap from './components/Roadmap';
 import Social from './components/Social';
 import Synopsis from './components/Synopsis';
 import TechText from './components/TechText';
+import Web3Check from './components/modals/Web3Check';
+import MarketText from './components/MarketText';
+
 
 class App extends Component {
 
@@ -17,18 +20,16 @@ class App extends Component {
     
     return (
       <div className="App">
+        <Web3Check />
         <NavBar />
         <HeroSplash />
         <Synopsis />
-        <div id="portal-main">
-          <PortalContainer />
-        </div>
+        <PortalContainer />
         <Features />
+        <MarketText />
         <TechText />
         <Roadmap />
         <Social />  
-        
-        
       </div>
     );
   }

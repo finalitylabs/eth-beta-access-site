@@ -1,0 +1,8 @@
+{
+    "ON_ETH_FOR_QRT_TRANSACTION_OPEN": "Your request for QRT has been received, pay up now...",
+    "ON_ETH_FOR_QRT_TRANSACTION_SEND": "Your payment is on it's way!",
+    "ON_KITTY_FOR_BETA_ACCESS_TRANSACTION_OPEN": "Your kitty has been sacrificed to the portal...",
+    "ON_KITTY_FOR_BETA_ACCESS_TRANSACTION_SEND": "Your kitty grunt is on its way!",
+    "ON_KITTY_FOUND": "We've found your kitty, click on 'DROP KITTIES' to send it...",
+    "ON_TRANSACTION_REJECTED": "Something went wrong, please try again."
+}

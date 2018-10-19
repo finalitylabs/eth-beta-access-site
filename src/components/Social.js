@@ -10,7 +10,7 @@ class Social extends Component {
                 <p>A Finality Labs Production | JOIN THE FIGHT!</p>
                 <div className='social-inner'> 
                     <div>       
-                    <a href='https://twitter.com/HeroesExtreme' target='_blank' rel='noopener noreferrer'>
+                    <a href='https://twitter.com/ETimeHeroes' target='_blank' rel='noopener noreferrer'>
                         <img className='twitter' src={twitter} alt='twitter'/>
                     </a>
                     </div>
@@ -20,7 +20,7 @@ class Social extends Component {
                     </a>
                     </div>
                     <div>
-                    <a href='https://www.instagram.com/extremetimeheroes/?hl=en' target='_blank' rel='noopener noreferrer'>
+                    <a href='https://www.instagram.com/eternaltimeheroes' target='_blank' rel='noopener noreferrer'>
                         <img className='instagram' src={instagram} alt='instagram'/>
                     </a>
                     </div>

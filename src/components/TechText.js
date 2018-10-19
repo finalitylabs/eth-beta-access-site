@@ -1,16 +1,23 @@
 import React, { Component } from 'react';
 
+import plasma from '../assets/EternalTimeHeroes_Plasma.png';
+
 class TechText extends Component {
     render() {
         return (
             <div id='techtext'>
-                <h1>TECHNICAL INFORMATION</h1>
-                <h2>Title</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lobortis sed orci sed aliquam. Phasellus vitae fringilla sapien. Aenean rhoncus molestie sodales. Maecenas eu consequat nisi, quis consectetur risus. Phasellus sit amet tempus nisl. Maecenas at posuere quam, nec porta nisl. Praesent ligula neque, pellentesque eu consectetur ullamcorper, bibendum quis enim. Quisque venenatis sit amet leo ac efficitur. Sed malesuada, urna sit amet posuere vehicula, lectus eros placerat tellus, non luctus felis mi nec erat. Sed blandit nulla ex, non luctus urna vehicula ut. Duis quis neque ut sem pharetra gravida. Ut rhoncus id magna vitae scelerisque. Praesent imperdiet massa vitae tortor dapibus, ut pharetra libero bibendum. Maecenas aliquet ullamcorper nisl. Aenean hendrerit, ante a consectetur viverra, augue lorem facilisis nulla, in dignissim justo elit vitae sapien.</p>
-                <h2>Title</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lobortis sed orci sed aliquam. Phasellus vitae fringilla sapien. Aenean rhoncus molestie sodales. Maecenas eu consequat nisi, quis consectetur risus. Phasellus sit amet tempus nisl. Maecenas at posuere quam, nec porta nisl. Praesent ligula neque, pellentesque eu consectetur ullamcorper, bibendum quis enim. Quisque venenatis sit amet leo ac efficitur. Sed malesuada, urna sit amet posuere vehicula, lectus eros placerat tellus, non luctus felis mi nec erat. Sed blandit nulla ex, non luctus urna vehicula ut. Duis quis neque ut sem pharetra gravida. Ut rhoncus id magna vitae scelerisque. Praesent imperdiet massa vitae tortor dapibus, ut pharetra libero bibendum. Maecenas aliquet ullamcorper nisl. Aenean hendrerit, ante a consectetur viverra, augue lorem facilisis nulla, in dignissim justo elit vitae sapien.</p>
-                <h2>Title</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lobortis sed orci sed aliquam. Phasellus vitae fringilla sapien. Aenean rhoncus molestie sodales. Maecenas eu consequat nisi, quis consectetur risus. Phasellus sit amet tempus nisl. Maecenas at posuere quam, nec porta nisl. Praesent ligula neque, pellentesque eu consectetur ullamcorper, bibendum quis enim. Quisque venenatis sit amet leo ac efficitur. Sed malesuada, urna sit amet posuere vehicula, lectus eros placerat tellus, non luctus felis mi nec erat. Sed blandit nulla ex, non luctus urna vehicula ut. Duis quis neque ut sem pharetra gravida. Ut rhoncus id magna vitae scelerisque. Praesent imperdiet massa vitae tortor dapibus, ut pharetra libero bibendum. Maecenas aliquet ullamcorper nisl. Aenean hendrerit, ante a consectetur viverra, augue lorem facilisis nulla, in dignissim justo elit vitae sapien.</p>
+                <h1>FEE AND LATENCY REDUCTION</h1>
+                <p>A core design goal of E.T.H. is to reduce the cost of interacting with the blockchain and avoid the same issues that other Ethereum games have presented in the past. Reducing "on-chain" transactions with "layer2" scalability solutions increases transaction throughput so players don't have to wait for miners to confirm their actions. To accomplish this, E.T.H. is built on top of the latest theory in Ethereum scalability research. </p>
+                <img src={plasma} />
+                <br/>
+                <h2>State-Channels</h2>
+                <p>E.T.H. uses virtual channel systems to compute advanced turn-based logic. These state transitions ultimately settle to a winner-loser state. We use a form of force-push-moves to ensure that no party can stall or cheat a game inside the channel. </p>
+                <br/>
+                <h2>Plasma</h2>
+                <p>While in a battle channel it is assumed that both players will always be online to sign state updates, however this requirement may not always be desirable. If simple NFT swaps or payments are to be made, it would be nice to reduce the burden of all participants being online all of the time. To achieve this we have been working with most of the Plasma research teams. Users still have to check in periodically but this is still an improvement. </p>
+                <br/>
+                <h2>Marketplace</h2>
+                <p>The marketplace relies on atomic swaps off-chain to be possible. An area of our plasma research has specifically revolved around this. Look forward to documentation and proofs of concepts on this soon. </p>
             </div>
         );
     }

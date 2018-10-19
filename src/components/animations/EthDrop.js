@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Lottie from "react-lottie";
 import * as animationData from "../../assets/animation_data/02portalloopETH_clean.json";
-import api from "../../api.js";
 
 
 class EthDrop extends Component {
@@ -12,49 +11,32 @@ class EthDrop extends Component {
       isPaused: false,
       Animated: 0,
     };
-  }
-
-  render() {
-    const defaultOptions = {
+    this.defaultOptions = {
       loop: false,
       autoplay: false,
       animationData: animationData
     };
-    const { isStopped, isPaused, Animated } = this.state;
+  }
 
-    const clickHandler = event => {
-      testApi()
-      event.preventDefault();
-      if (!isStopped) {
-        this.setState({ isStopped: true });
-      }
-      this.setState({ isStopped: false });
-      console.log("clicked");
-      this.setState({ Animated: 0 })
-    };
+  clickHandler = (e) => {
+    this.setState({ 
+        isStopped: false,
+        Animated: 0
+    });
+    console.log("clicked");
+  };
 
-    const testApi = async () => {
-      let helpers = new api()
-      let receipt = await helpers.purchaseQRT()
-      console.log(receipt)
-    };
-
+  render() {
     return (
       <div id="ethdrop">
         <Lottie
-          style={{
-            position: 'absolute',
-            marginLeft: '450px'
-          }}
           className='ethdrop'
-          options={defaultOptions}
-          isStopped={isStopped}
-          isPaused={isPaused}
-          Animated={Animated}  
+          options={this.defaultOptions}
+          isStopped={this.state.isStopped}
+          isPaused={this.state.isPaused}
+          Animated={this.state.Animated}  
         />
-        
-        <button onClick={clickHandler} className="eth-btn"></button>
-      </div>
+    </div>
     );
   }
 }

@@ -8,25 +8,47 @@ class Coin extends Component {
         super(props);
         this.state = {
             isStopped: true,
-            isPaused: false
+            isPaused: false,
+            progress: 0
         }
-    }
-    
-    render() {
-        const defaultOptions = {
+        this.defaultOptions = {
             loop: false,
             autoplay: false,
             animationData: animationData
         }
+    }
 
-        const { isStopped, isPaused } = this.state;
+    startAnimation = (e) => {
+        this.animation.play()
+        console.log("clicked");
+    };
+
+    onAnimationComplete = () => {
+        this.setState({ 
+            progress:0
+        });
+    }
+    
+    render() {
         return (
             <div id="coin-animation">
                 <Lottie 
-                    options={defaultOptions}
-                    isStopped={isStopped}
-                    isPaused={isPaused}
-                    width='250px'
+                    ref={ 
+                        animation => {
+                            this.animation = animation;
+                        }
+                    }
+                    eventListeners={
+                        [
+                            {
+                                eventName: 'complete',
+                                callback: this.onAnimationComplete,
+                            },
+                        ]
+                    }
+                    options={this.defaultOptions}
+                    isStopped={this.state.isStopped}
+                    isPaused={this.state.sPaused}
                 />
             </div>
         );

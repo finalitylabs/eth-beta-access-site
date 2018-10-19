@@ -1,61 +1,49 @@
 import React, { Component } from "react";
 import Lottie from "react-lottie";
 import * as animationData from "../../assets/animation_data/01portaldropcat_clean.json";
-import api from "../../api.js";
 
-class CatDrop extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      isStopped: true,
-      isPaused: false,
-      Animated: 0,
-    };
-  }
+class DropAnimation extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            isStopped: true,
+            isPaused: false,
+            Animated: 0,
+        };
+        this.defaultOptions = {
+            loop: false,
+            autoplay: false,
+            animationData: this.props.animationData,
+            // eventListeners=[
+            //     {
+            //       eventName: 'complete',
+            //       callback: this.onAnimationComplete,
+            //     },
+            //   ]
+        };
+    }
 
-  render() {
-    const defaultOptions = {
-      loop: false,
-      autoplay: false,
-      animationData: animationData
-    };
-    const { isStopped, isPaused, Animated } = this.state;
-
-    const clickHandler = async event => {
-      testApi()
-      event.preventDefault();
-      if (!isStopped) {
-        this.setState({ isStopped: true });
-      }
-      this.setState({ isStopped: false });
-      console.log("clicked");
-      this.setState({ Animated: 0 })
-    };
-
-    const testApi = async () => {
-      let helpers = new api()
-      let network = helpers.getNetwork()
-      console.log(network)
-      let qrt = await helpers.getQRTcount()
-      console.log(qrt)
-      let kittyCount = await helpers.getPortalKittyCount()
-      console.log(kittyCount)
+    clickHandler = () => {
+        this.setState({ 
+            isStopped: false,
+            Animated: 0
+        });
+        console.log("clicked");
     };
 
-    return (
-      <div id="catdrop">
-        <Lottie
-          options={defaultOptions}
-          isStopped={isStopped}
-          isPaused={isPaused}
-          width='100%'
-          Animated={Animated}
-         
-        />
-        <button onClick={clickHandler} className="cat-btn"></button>
-      </div>
-    );
-  }
+    render() {
+        return (
+            <div className="dropAnimation">
+                <Lottie
+                    options={this.defaultOptions}
+                    isStopped={this.state.isStopped}
+                    isPaused={this.state.isPaused}
+                    width='100%'
+                    Animated={this.state.Animated}
+                />
+            </div>
+        );
+    }
 }
 
-export default CatDrop;
+export default DropAnimation;
