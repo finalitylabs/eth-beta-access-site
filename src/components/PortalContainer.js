@@ -46,10 +46,9 @@ class PortalContainer extends Component {
 
     render() {
         return (
-            [
-            <h1 className="portal-header">Beta access portal</h1>,
-            <p className="portal-info">Use the portal to either exchange a CryptoKitty or some Ethereum in exchange for beta access to the game and unlock a character exclusive to people participating in the beta sale. </p>,
             <div id="portal-main">
+                <h1 className="portal-header">Beta access portal</h1>
+                <p className="portal-info">Use the portal to either exchange a CryptoKitty or some Ethereum in exchange for beta access to the game and unlock a character exclusive to people participating in the beta sale. </p>
                 <div className="monitor">
                     <div className="remove-click-layer"/>
                     <img src={consolesvg} />
@@ -105,7 +104,7 @@ class PortalContainer extends Component {
 
 
             </div>
-        ]);
+        );
     }
 }
 

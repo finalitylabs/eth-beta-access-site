@@ -2,8 +2,14 @@
 .kitty-img{
   height: 100%;
 }
+
+.monitor {
+  background-color: #20868D;
+}
+
 #portal-main{
   z-index: 10;
+  background-color: #0E061E;
 }
 .portal-header {
   color: white;
