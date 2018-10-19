@@ -21,7 +21,7 @@ class App extends Component {
         <NavBar />
         <HeroSplash />
         <Synopsis />
-        {/* <PortalContainer /> */}
+        <PortalContainer />
         <Features />
         <MarketText />
         <TechText />
