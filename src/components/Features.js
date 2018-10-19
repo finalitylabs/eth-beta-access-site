@@ -9,6 +9,7 @@ import hank from '../assets/FL_EternalTimeHeroes_CharacterProfiles_Hank.png';
 import c3bcBackground from '../assets/ETH_C3BC_Bg_NoCharacters.png';
 import runnerBackground from '../assets/ETH_Runner_Bg_NoCharacters.png';
 import postapocBackground from '../assets/ETH_PostApocalyptic_Bg_NoCharacters.png';
+import legend from '../assets/EternalTimeHeroes_RarityLegend.png'
 import demVideo from '../assets/Gameplaydemo_v3LOW.mp4';
 
 import { DefaultPlayer as Video } from 'react-html5video';
@@ -32,6 +33,7 @@ class Features extends Component {
                     </p>
                 </div>
                 <h2>Special Beta Access Edition Heroes</h2>
+                <img className='rarity-legend' src={legend} alt='Rarity Legend' />
                 <div className='feature-page'>
                     <div className='feature-col'>
                         <img src={elbrujo} />
@@ -61,6 +63,7 @@ Big Boi is -- well, a big boy. A survivor of the apocalypse equipped with unorth
                     </div>
                 </div>
                 <h2>Special Beta Access Edition Grunts</h2>
+                <img className='rarity-legend' src={legend} alt='Rarity Legend' />
                 <div className='feature-page'>
                     <div className='feature-col'>
                         <img src={bestia} />

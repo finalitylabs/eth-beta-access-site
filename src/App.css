@@ -122,7 +122,7 @@ h4 { font-weight:normal; }
   height: 100%;
   background: linear-gradient(#030011 ,#3e178c);
   z-index: 2;
-  box-shadow: 0 0 100px 70px rgb(0,0,0);
+  
 }
 
 #synopsis h1 {
@@ -159,6 +159,12 @@ h4 { font-weight:normal; }
   background: #292634;
   color: white;
   padding-bottom: 100px;
+}
+
+.rarity-legend {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  width: 40vw;
 }
 
 .feature-bgs {
@@ -272,7 +278,7 @@ h4 { font-weight:normal; }
   padding-top: 75px;
 }
 
-#techtext p {
+.padding {
   padding-left: 150px;
   padding-right: 150px;
 }
@@ -283,6 +289,22 @@ h4 { font-weight:normal; }
 
 #techtext img {
   width: 90vw;
+}
+
+.tech-h2 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.tech-p {
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
+  padding-bottom: 75px;
+}
+
+.tech-p p {
+  width: 300px;
 }
 
 #roadmap {
@@ -330,17 +352,17 @@ h4 { font-weight:normal; }
 }
 
 .twitter {
-  width: 50px;
+  width: 25px;
   
 }
 
 .github {
-  width: 50px;
+  width: 25px;
   padding-left: 25px;
 }
 
 .instagram {
-  width: 50px;
+  width: 25px;
   padding-left: 25px;
 }
  
