@@ -23,7 +23,7 @@ class Features extends Component {
                 <div className='feature-desc'>
                     <h1>BETA ACCESS GAME FEATURES</h1>
                     <p>
-                        By using the portal to pre-order access to E.T.H. you will receive a beta access token and / or the portal conversion of a CryptoKitty. With an E.T.H. token, players will gain both access to the Beta builds / stress tests, as well as the official release of Eternal Time Heroes. E.T.H. Access tokens operate as a voucher and the holder of the private key used to purchase in the portal owns the game account. Please retain access to your metamask seed phrase to prove beta access purchase.
+                        By using the portal to pre-order access to E.T.H. you will receive a beta access token and / or the portal conversion of a CryptoKitty. With an E.T.H. token, players will gain both access to the Beta builds / stress tests, as well as the official release of Eternal Time Heroes. E.T.H. Access tokens operate as a voucher and the holder of the token owns the game account. You may send your access token to a different account if you do not want to store it on the browser. Please retain access the Ethereum account that holds the QRT beta access token.
                         <br/><br/>
                         Pre-ordering also comes with a limited edition, legendary hero from one of E.T.H.’s original three timelines. Similarly, a portal conversion of a CryptoKitty comes with a moderately rare CryptoKitties-inspired grunt. But why choose between the two options when you can do both and start building your battle forces?
                         <br/><br/>
