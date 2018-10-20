@@ -23,9 +23,10 @@ class Web3Check extends Component {
         }
     }
 
-    componentDidMount = async () => {
+    onMetamaskUpdate = async (e) => {
         const api = new Api();
         let web3 = window.web3;
+
         if (window.web3) {
             let account= await api.getAccount();
             let network = api.getNetwork(); 
@@ -40,6 +41,12 @@ class Web3Check extends Component {
             })
         }
     }
+
+    componentDidMount = () => {
+        window.web3.currentProvider.publicConfigStore.on('update', this.onMetamaskUpdate);
+        this.onMetamaskUpdate(); // Initial metmask check
+    }
+
     render() {
         return (
             <div className="wallet-not-available">
