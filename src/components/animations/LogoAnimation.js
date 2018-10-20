@@ -15,7 +15,7 @@ class LogoAnimation extends Component {
             this.setState({
                 animationFinished: true
             })
-        }, 3650)
+        }, 3750)
     }
 
   render() {
