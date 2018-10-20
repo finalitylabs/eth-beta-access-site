@@ -21,15 +21,24 @@ class Web3Check extends Component {
             metamaskLoggedin: true,
             mainnet: true
         }
+        this.lastAccount = null;
+        this.lastNetwork = null;
     }
 
-    onMetamaskUpdate = async (e) => {
+    onMetamaskUpdate = (e) => {
+        if (e && e.networkVersion !== this.lastNetwork || e.selectedAddress !== this.lastAccount) {
+            this.web3Check();
+        }
+    }
+    web3Check = async () => {
         const api = new Api();
         let web3 = window.web3;
 
         if (window.web3) {
             let account= await api.getAccount();
+            this.lastAccount = account[0];
             let network = api.getNetwork(); 
+            this.lastNetwork = network;
             this.setState({
                 metamaskInstalled: !!web3,
                 metamaskLoggedin: account.length > 0,
@@ -45,7 +54,7 @@ class Web3Check extends Component {
     componentDidMount = () => {
         if (window.web3) {
             window.web3.currentProvider.publicConfigStore.on('update', this.onMetamaskUpdate);
-            this.onMetamaskUpdate(); // Initial metmask check
+            this.web3Check(); // Initial metmask check
         }
     }
 
