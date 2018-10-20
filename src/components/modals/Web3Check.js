@@ -43,8 +43,10 @@ class Web3Check extends Component {
     }
 
     componentDidMount = () => {
-        window.web3.currentProvider.publicConfigStore.on('update', this.onMetamaskUpdate);
-        this.onMetamaskUpdate(); // Initial metmask check
+        if (window.web3) {
+            window.web3.currentProvider.publicConfigStore.on('update', this.onMetamaskUpdate);
+            this.onMetamaskUpdate(); // Initial metmask check
+        }
     }
 
     render() {
