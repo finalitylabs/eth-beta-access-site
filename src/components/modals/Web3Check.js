@@ -33,7 +33,6 @@ class Web3Check extends Component {
     web3Check = async () => {
         const api = new Api();
         let web3 = window.web3;
-
         if (window.web3) {
             let account= await api.getAccount();
             this.lastAccount = account[0];
@@ -55,6 +54,10 @@ class Web3Check extends Component {
         if (window.web3) {
             window.web3.currentProvider.publicConfigStore.on('update', this.onMetamaskUpdate);
             this.web3Check(); // Initial metmask check
+        } else {
+            this.setState({
+                metamaskInstalled: false
+            })
         }
     }
 
