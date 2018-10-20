@@ -48,7 +48,7 @@ class PortalContainer extends Component {
         return (
             <div id="portal-main">
                 <h1 className="portal-header">BETA ACCESS PORTAL</h1>
-                <p className="portal-info">Use the portal to either exchange a CryptoKitty or some Ethereum in exchange for beta access to the game and unlock a character exclusive to people participating in the beta sale. </p>
+                <p className="portal-info">In order to gain presale access to E.T.H., you will need to either install MetaMask and fund your MetaMask wallet with 0.01 Ether (cost of the presale access) or find the CryptoKitty ID of a lazy kitty and input it in the number  screen (above the number pad) below. Please see the console screen for further instructions. </p>
                 <div className="monitor">
                     <div className="remove-click-layer"/>
                     <img className="console-svg" src={consolesvg} />
