@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Typing from 'react-typing-animation';
+import Typist from 'react-typist';
 
 class Terminal extends Component {
     constructor(props) {
@@ -19,30 +19,45 @@ class Terminal extends Component {
     componentDidMount = () => {
         this.setState({
             consoleText: [
-                <Typing 
-                    key={this.state.consoleText.length ? this.state.consoleText.length : 0}
-                    speed={12} 
-                    onFinishedTyping={()=>clearInterval(this.interval)}
+                <Typist
+                    avgTypingDelay={40}
+                    cursor={
+                        {
+                            show: false,
+                            blink: false,
+                            element: '|',
+                        }
+                    }
+                    onTypingDone={()=>clearInterval(this.interval)}
+                    key={this.state.consoleText.length}
                     className="terminal-text">
                     E.T.H. <br></br><br></br> WELCOME, ETERNAL TIME HERO, <br></br> Help us reach the Point Of Singularity! <br></br> > Click the "ETH for QRT" button to purchase a beta access QRT token <br></br> or <br></br> > Surrender a CryptoKitty to the portal by entering the CryptoKitty (ID#) and clicking the "Drop Kitties" button
-                </Typing>
+                </Typist>
             ]
         })
         this.interval = setInterval(()=>{
             this.scrollDown();
-        }, 100)    }
+        }, 100)    
+    }
 
     addTerminalText = (newText) => {
         this.setState({
             consoleText: [
                 ...this.state.consoleText, 
-                <Typing 
+                <Typist 
+                    avgTypingDelay={20}
+                    cursor={
+                        {
+                            show: false,
+                            blink: false,
+                            element: '|',
+                        }
+                    }
+                    onTypingDone={()=>clearInterval(this.interval)}
                     key={this.state.consoleText.length}
-                    speed={12} 
-                    onFinishedTyping={()=>clearInterval(this.interval)}
-                    className="terminal-text"> 
+                    className="terminal-text">
                     > {newText}
-                </Typing>
+                </Typist>
             ]
         })
         this.interval = setInterval(()=>{
