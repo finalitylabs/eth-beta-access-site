@@ -229,7 +229,7 @@ h4 { font-weight:normal; }
 }
 
 .feature-desc p {
-  margin-top: 40px;
+  margin-top: 20px;
   padding-left: 150px;
   padding-right: 150px;
   line-height: 28px;
@@ -264,7 +264,7 @@ h4 { font-weight:normal; }
   padding-bottom: 20px;
 }
 
-#techtext {
+.techtext {
   width: 100vw;
   height: 100%;
   background: -webkit-linear-gradient(#030011, #3e178c);
@@ -272,10 +272,11 @@ h4 { font-weight:normal; }
   text-align: center;
 }
 
-#techtext p { text-align: left; }
+.techtext p { text-align: left; }
 
-#techtext h1 {
+.techtext h1 {
   padding-top: 75px;
+  padding-bottom: 20px;
 }
 
 .padding {
@@ -283,11 +284,11 @@ h4 { font-weight:normal; }
   padding-right: 150px;
 }
 
-#techtext p:last-of-type {
+.techtext p:last-of-type {
   padding-bottom: 75px;
 }
 
-#techtext img {
+.techtext img {
   width: 90vw;
 }
 
@@ -296,12 +297,20 @@ h4 { font-weight:normal; }
   align-items: center;
   justify-content: center;
   width: 100vw;
+  
 }
 
 .tech-h2 {
   display: flex;
-  width: 90vw;
+  width: 100vw;
+  padding-left: 150px;
+  padding-right: 150px;
   justify-content: space-around;
+  
+}
+
+.tech-h2 h2 {
+  margin-bottom: 0px;
 }
 
 .tech-p-outer {
@@ -313,14 +322,19 @@ h4 { font-weight:normal; }
 
 .tech-p {
   display: flex;
-  justify-content: space-around;
-  width: 90vw;
+  justify-content: space-between;
+  width: 100vw;
+  padding-left: 150px;
+  padding-right: 150px;
   padding-bottom: 75px;
 }
 
 .tech-p p {
-  width: 300px;
+  width: 310px;
+  margin-top: 0;
 }
+
+
 
 #roadmap {
   font-family: 'Rajdhani';
@@ -336,6 +350,7 @@ h4 { font-weight:normal; }
 
 #roadmap h1 {
   padding-top: 25px;
+  padding-bottom: 5px;
   text-align: center;
 }
 

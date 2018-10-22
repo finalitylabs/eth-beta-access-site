@@ -5,10 +5,10 @@ class Roadmap extends Component {
     render() {
         return (
             <div id='roadmap'>
-                <h1>ROADMAP</h1>
-                
-                <img src={roadmap} alt='roadmap' />
-                
+                <div className='roadmap-inner'>
+                    <h1>ROADMAP</h1>
+                    <img src={roadmap} alt='roadmap' />
+                </div>
             </div>
         );
     }
