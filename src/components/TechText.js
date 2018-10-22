@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import plasma from '../assets/EternalTimeHeroes_Plasma.png';
+import plasma from '../assets/EternalTimeHeroes_Plasma_Bk.png';
 
 class TechText extends Component {
     render() {
