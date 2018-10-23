@@ -264,6 +264,22 @@ h4 { font-weight:normal; }
   padding-bottom: 20px;
 }
 
+.market-text {
+  width: 100vw;
+  height: 100%;
+  background: -webkit-linear-gradient(#030011, #3e178c);
+  color: white;
+  text-align: center;
+}
+
+.market-text h1 {
+  padding-top: 55px;
+}
+
+.market-text p {
+  padding-bottom: 75px;
+}
+
 .techtext {
   width: 100vw;
   height: 100%;
@@ -272,7 +288,9 @@ h4 { font-weight:normal; }
   text-align: center;
 }
 
-.techtext p { text-align: left; }
+.techtext p { 
+  text-align: left; 
+}
 
 .techtext h1 {
   padding-top: 75px;
@@ -282,10 +300,6 @@ h4 { font-weight:normal; }
 .padding {
   padding-left: 150px;
   padding-right: 150px;
-}
-
-.techtext p:last-of-type {
-  padding-bottom: 75px;
 }
 
 .techtext img {
@@ -324,6 +338,7 @@ h4 { font-weight:normal; }
   display: flex;
   justify-content: space-between;
   width: 100vw;
+  height: 100%;
   padding-left: 150px;
   padding-right: 150px;
   padding-bottom: 75px;
@@ -343,20 +358,20 @@ h4 { font-weight:normal; }
   align-items: center;
   justify-content: space-around;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   background: #292634;
   color: white;
 }
 
 #roadmap h1 {
-  padding-top: 25px;
+  padding-top: 30px;
   padding-bottom: 5px;
   text-align: center;
 }
 
 #roadmap img {
   width: 900px;
-  padding-bottom: 25px;
+  padding-bottom: 75px;
 }
 
 #social {
