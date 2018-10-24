@@ -253,6 +253,10 @@ h4 { font-weight:normal; }
   padding-right: 20px;
 }
 
+.feature-col p:last-of-type {
+  text-align: left;
+}
+
 .feature-col img {
   width: 275px;
   margin: auto;
@@ -278,6 +282,7 @@ h4 { font-weight:normal; }
 
 .market-text p {
   padding-bottom: 75px;
+  text-align: left;
 }
 
 .techtext {
@@ -345,7 +350,8 @@ h4 { font-weight:normal; }
 }
 
 .tech-p p {
-  width: 310px;
+  width: 280px;
+  padding-left: 30px;
   margin-top: 0;
 }
 
