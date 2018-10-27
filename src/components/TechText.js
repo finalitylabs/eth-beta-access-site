@@ -12,15 +12,16 @@ class TechText extends Component {
                 <img src={plasma} />
                 <br/>
                 <div id='tech-trio'>
-                    <div className='tech-h2'>
-                    <h2>State-Channels</h2>
-                    <h2>Plasma</h2>
-                    <h2>Marketplace</h2>
-                    </div>
-                    <br/>
-                    <div className='tech-p'>
+                    <div className="tech-info-section">
+                        <h2>State-Channels</h2>
                         <p>E.T.H. uses virtual channel systems to compute advanced turn-based logic. These state transitions ultimately settle to a winner-loser state. We use a form of force-push-moves to ensure that no party can stall or cheat a game inside the channel. </p>
+                    </div>
+                    <div className="tech-info-section">
+                        <h2>Plasma</h2>
                         <p>While in a battle channel it is assumed that both players will always be online to sign state updates, however this requirement may not always be desirable. If simple NFT swaps or payments are to be made, it would be nice to reduce the burden of all participants being online all of the time. To achieve this we have been working with most of the Plasma research teams. Users still have to check in periodically but this is still an improvement. </p>
+                    </div>
+                    <div className="tech-info-section">
+                        <h2>Marketplace</h2>
                         <p>The marketplace relies on atomic swaps off-chain to be possible. An area of our plasma research has specifically revolved around this. Look forward to documentation and proofs of concepts on this soon. </p>
                     </div>
                 </div>

@@ -19,6 +19,14 @@ h4 { font-weight:normal; }
 
 /*p { text-align: left; }*/
 
+.hide {
+  display: none!important;
+}
+.show {
+  display: block;
+}
+
+
 .App {
   font-family: 'Rajdhani';
   position: relative;
@@ -33,7 +41,7 @@ h4 { font-weight:normal; }
 .App h1 {
   font-family: 'Rajdhani';
   font-size: 36pt;
-  line-height: 28px;
+  line-height: 44px;
 }
 
 .email {
@@ -87,7 +95,7 @@ h4 { font-weight:normal; }
 
 #navbar img {
   height: 25px;
-  margin-left: 75px;
+  margin-left: 4%;
 }
 
 #herosplash {
@@ -104,6 +112,11 @@ h4 { font-weight:normal; }
 
 #herosplash svg {
   width: 100vw;
+}
+
+#herosplash .background-img {
+  height: 100vh;
+  width: 100%;
 }
 
 .logo {
@@ -136,8 +149,7 @@ h4 { font-weight:normal; }
 #synopsis p {
   text-align: left; 
   line-height: 28px;
-  padding-left: 150px;
-  padding-right: 150px;
+  padding: 0 6%;
 }
 
 .synopsislastp {
@@ -230,8 +242,8 @@ h4 { font-weight:normal; }
 
 .feature-desc p {
   margin-top: 40px;
-  padding-left: 150px;
-  padding-right: 150px;
+  padding-left: 6%;
+  padding-right: 6%;
   line-height: 28px;
   text-align: left;
 }
@@ -279,8 +291,8 @@ h4 { font-weight:normal; }
 }
 
 .padding {
-  padding-left: 150px;
-  padding-right: 150px;
+  padding-left: 6%;
+  padding-right: 6%;
 }
 
 #techtext p:last-of-type {
@@ -291,20 +303,13 @@ h4 { font-weight:normal; }
   width: 90vw;
 }
 
-.tech-h2 {
+#tech-trio {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
 }
-
-.tech-p {
-  display: flex;
-  justify-content: space-around;
-  width: 100vw;
-  padding-bottom: 75px;
-}
-
-.tech-p p {
-  width: 300px;
+.tech-info-section {
+  width: 30%;
 }
 
 #roadmap {
@@ -331,23 +336,22 @@ h4 { font-weight:normal; }
 
 #social {
   display: flex;
-  flex-direction: rpw;
+  flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100vw;
-  height: 100px;
   background: #030011;
   color: white;
 }
 
 #social p {
-  padding-left: 75px;
+  width: 45%;
   line-height: 28pt;
   font-size: 16pt;
 }
 
 .social-inner {
-  padding-right: 75px;
+  width: 35%;
   display: flex;
 }
 
@@ -439,4 +443,130 @@ h4 { font-weight:normal; }
   margin-left: 78px;
   color: rgb(0, 255, 21);
   text-align: left;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.modal-container .content{
+  color: black!important;
+}
+.hamburger {
+  display: none;
+}
+
+.toggle-terms{
+  color: white;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+}
+
+/* Media queries */ 
+@media screen and (max-width: 1151px) {
+  .hamburger {
+    display: block;
+  }
+
+  #roadmap img {
+    width: 90%;
+  }
+
+  #synopsis img { 
+    width: 90%!important;
+  }
+  .rarity-legend {
+    width: 90%;
+  }
+  .feature-col {
+    width: 100%;
+  }
+
+  #tech-trio {
+    display: block;
+  }
+
+  .tech-info-section{
+    width: 90%;
+    margin: auto;
+  }
+
+  .feature-page {
+    display: block;
+    width: 90%;
+    margin: auto;
+
+  }
+
+  .feature-bgs {
+    width: 90%;
+    margin: auto;
+  }
+  .feature-bgs img {
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+  .feature-bg-imgs {
+    display: block;
+  }
+  .feature-page p{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 40px;
+  }
+
+  .feature-desc {
+    width: 90%;
+    display: block;
+    margin: auto;
+  }
+
+  .feature-video {
+    width: 100%;
+  }
+  #navbar {
+    overflow: visible;
+    position: fixed;
+  }
+
+  #navbar ul{
+    display: block;
+    width: 100%;
+    margin: auto;
+    padding: 0!important;
+  }
+
+  #navbar ul li{
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+  }
+  .hamburger {
+    margin-right: 4%;
+  }
+  .mobile-menu {
+    display: block;
+    background: #030011;
+    position: absolute;
+    top: 65px;
+  }
+  .desktop-menu {
+    display: none!important;
+  }
+  #herosplash .background-img {
+    display: none;
+  }
+
+  #herosplash .logo {
+    width: 120%;
+    left: -40%;
+    top: 270px;
+  }
+
+  #herosplash {
+    background-image: linear-gradient(to top right, #68144F, black); /* Standard syntax (must be last) */
+  }
 }

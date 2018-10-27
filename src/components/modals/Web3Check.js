@@ -65,25 +65,9 @@ class Web3Check extends Component {
         return (
             <div className="wallet-not-available">
                 <MobileView>
-                    <div className={`metamask-installed download mobile ${this.state.metamaskInstalled ? "hide" : "show"}`}>
+                    <div className={`metamask-installed download mobile show}`}>
                         <div className="info-section">
-                            <h1>Please download a mobile browser wallet</h1>
-                            <p>We recomend Trust wallet, click here to download:</p>
-                            <a href="https://links.trustwalletapp.com/a/key_live_lfvIpVeI9TFWxPCqwU8rZnogFqhnzs4D?&event=openURL&url=https://google.com">
-                                <img src={toshiLogo} className="toshi-logo" alt="the Toshi logo"/>
-                            </a>
-                        </div>
-                    </div>
-                    <div className={`metamask-installed log-in mobile ${this.state.metamaskLoggedin ? "hide" : "show"}`}>
-                        <div className="info-section">
-                            <h1>Please login to your mobile wallet!</h1>
-                            <img src={ethWallet} alt="a eth wallet logo"/>
-                        </div>
-                    </div>
-                    <div className={`metamask-installed log-in mobile ${this.state.mainnet ? "hide" : "show"}`}>
-                        <div className="info-section">
-                            <h1>Please make sure you're connected to mainnet</h1>
-                            <img src={connect_mainnet} alt="displaying how a selected mainnet should look" />
+                            <h1>This section is only available on desktop browsers.</h1>
                         </div>
                     </div>
                 </MobileView>
