@@ -18,11 +18,11 @@ class TechText extends Component {
                     </div>
                     <div className="tech-info-section">
                         <h2>Plasma</h2>
-                        <p>E.T.H. heroes and items can interact with the Finality Labs Plasma network to reduce the cost of transfering ownership. By default all heroes are minted in Finality Network and may be withdrawn to the Ethereum chain.</p>
+                        <p>E.T.H. heroes and items can interact with the Finality Labs’ Plasma Network to reduce the cost of transferring ownership. By default, all heroes are minted in Finality Network and may be withdrawn to the Ethereum chain.</p>
                     </div>
                     <div className="tech-info-section">
                         <h2>Marketplace</h2>
-                        <p>The marketplace relies on atomic swaps off-chain to be possible. An area of our plasma research has specifically revolved around this. Look forward to documentation and proofs of concepts on this soon. </p>
+                        <p>The marketplace relies on atomic swaps on Plasma to be possible. An area of our Plasma research has specifically revolved around this. Look forward to documentation and proofs of concepts on this soon.</p>
                     </div>
                 </div>
             </div>
