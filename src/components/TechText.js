@@ -7,17 +7,18 @@ class TechText extends Component {
         return (
             <div className='techtext'>
                 <h1>FEE AND LATENCY REDUCTION</h1>
-                    <p className='padding'>A core design goal of E.T.H. is to reduce the cost of interacting with the blockchain and avoid the same issues that other Ethereum games have presented in the past. Reducing "on-chain" transactions with "layer2" scalability solutions increases transaction throughput so players don't have to wait for miners to confirm their actions. To accomplish this, E.T.H. is built on top of the latest theory in Ethereum scalability research. </p>
+                    <p className='padding'>A core design goal of E.T.H. is to reduce the cost of interacting with the blockchain and avoid the same issues that other Ethereum games have presented in the past. Reducing on-chain transactions with layer2 scalability solutions increases transaction throughput so players don't have to wait for miners to confirm their actions with potential high fees. To accomplish this, E.T.H. is built on top of the latest theory in Ethereum scalability research. </p>
                 <img src={plasma} />
+                <p>The above diagram is an illustration of a Plasma chain that can track NFT objects like E.T.H. heroes and items.</p>
                 <br/>
                 <div id='tech-trio'>
                 <div className="tech-info-section">
                         <h2>State-Channels</h2>
-                        <p>E.T.H. uses virtual channel systems to compute advanced turn-based logic. These state transitions ultimately settle to a winner-loser state. We use a form of force-push-moves to ensure that no party can stall or cheat a game inside the channel. </p>
+                        <p>E.T.H. uses virtual channel systems to compute its turn-based logic. These state transitions ultimately settle to a winner-loser state. We use a form of force-push-moves to ensure that no party can stall or cheat a game inside the channel. </p>
                     </div>
                     <div className="tech-info-section">
                         <h2>Plasma</h2>
-                        <p>While in a battle channel it is assumed that both players will always be online to sign state updates, however this requirement may not always be desirable. If simple NFT swaps or payments are to be made, it would be nice to reduce the burden of all participants being online all of the time. To achieve this we have been working with most of the Plasma research teams. Users still have to check in periodically but this is still an improvement. </p>
+                        <p>E.T.H. heroes and items can interact with the Finality Labs Plasma network to reduce the cost of transfering ownership. By default all heroes are minted in Finality Network and may be withdrawn to the Ethereum chain.</p>
                     </div>
                     <div className="tech-info-section">
                         <h2>Marketplace</h2>
@@ -30,3 +31,4 @@ class TechText extends Component {
 }
 
 export default TechText;
+ 
