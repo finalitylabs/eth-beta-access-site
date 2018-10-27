@@ -9,7 +9,7 @@ class TechText extends Component {
                 <h1>FEE AND LATENCY REDUCTION</h1>
                     <p className='padding'>A core design goal of E.T.H. is to reduce the cost of interacting with the blockchain and avoid the same issues that other Ethereum games have presented in the past. Reducing on-chain transactions with layer2 scalability solutions increases transaction throughput so players don't have to wait for miners to confirm their actions with potential high fees. To accomplish this, E.T.H. is built on top of the latest theory in Ethereum scalability research. </p>
                 <img src={plasma} />
-                <p>The above diagram is an illustration of a Plasma chain that can track NFT objects like E.T.H. heroes and items.</p>
+                <p className="tech-image-text">The above diagram is an illustration of a Plasma chain that can track NFT objects like E.T.H. heroes and items.</p>
                 <br/>
                 <div id='tech-trio'>
                 <div className="tech-info-section">
