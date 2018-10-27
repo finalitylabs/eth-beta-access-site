@@ -426,6 +426,7 @@ h4 { font-weight:normal; }
 .social-inner {
   width: 35%;
   display: flex;
+  justify-content: center;
 }
 
 .twitter {

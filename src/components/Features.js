@@ -6,9 +6,9 @@ import rowdy from '../assets/FL_EternalTimeHeroes_CharacterProfiles_Rowdy.png';
 import bestia from '../assets/FL_EternalTimeHeroes_CharacterProfiles_Bestia.png';
 import ruby from '../assets/FL_EternalTimeHeroes_CharacterProfiles_Ruby.png';
 import hank from '../assets/FL_EternalTimeHeroes_CharacterProfiles_Hank.png';
-import c3bcBackground from '../assets/ETH_C3BC_Bg_NoCharacters.png';
-import runnerBackground from '../assets/ETH_Runner_Bg_NoCharacters.png';
-import postapocBackground from '../assets/ETH_PostApocalyptic_Bg_NoCharacters.png';
+import c3bcBackground from '../assets/ETH_C3BC_Bg_NoCharacters_Small.png';
+import runnerBackground from '../assets/ETH_Runner_Bg_NoCharacters_Small.png';
+import postapocBackground from '../assets/ETH_PostApocalyptic_Bg_NoCharacters_Small.png';
 import legend from '../assets/EternalTimeHeroes_RarityLegend.png'
 import demVideo from '../assets/Gameplaydemo_v3LOW.mp4';
 

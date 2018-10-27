@@ -29,7 +29,7 @@ class Terminal extends Component {
                         }
                     }
                     onTypingDone={()=>clearInterval(this.interval)}
-                    key={this.state.consoleText.length}
+                    key={this.state.consoleText.length++}
                     className="terminal-text">
                     E.T.H. <br></br><br></br> WELCOME, ETERNAL TIME HERO, <br></br> Help us reach the Point Of Singularity! <br></br> > Click the "ETH for QRT" button to purchase a beta access QRT token <br></br> or <br></br> > Surrender a CryptoKitty to the portal by entering the CryptoKitty (ID#) and clicking the "Drop Kitties" button
                 </Typist>
@@ -54,7 +54,7 @@ class Terminal extends Component {
                         }
                     }
                     onTypingDone={()=>clearInterval(this.interval)}
-                    key={this.state.consoleText.length}
+                    key={this.state.consoleText.length++}
                     className="terminal-text">
                     > {newText}
                 </Typist>

@@ -3,6 +3,7 @@ import twitter from '../assets/social/twitter.png';
 import github from '../assets/social/github.png';
 import instagram from '../assets/social/instagram.png';
 import TermsOfService from '../components/modals/TermsOfService';
+import discord from '../assets/social/discord.png';
 
 class Social extends Component {
     constructor(props){
@@ -38,6 +39,11 @@ class Social extends Component {
                     <a href='https://www.instagram.com/eternaltimeheroes' target='_blank' rel='noopener noreferrer'>
                         <img className='instagram' src={instagram} alt='instagram'/>
                     </a>
+                    </div>
+                    <div>
+                        <a href='https://discord.gg/sT9sbba' rel="noopener noreferrer" target='_blank'>
+                            <img src={discord} alt='' className="instagram" width='28.125px'/>
+                        </a>
                     </div>
                 </div>
 
