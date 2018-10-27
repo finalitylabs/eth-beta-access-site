@@ -23,7 +23,7 @@ class Features extends Component {
                 <div className='feature-desc'>
                     <h1>BETA ACCESS GAME FEATURES</h1>
                     <p>
-                        By using the portal to pre-order access to E.T.H. you will receive a beta access token and / or the portal conversion of a CryptoKitty. With an E.T.H. token, players will gain both access to the Beta builds / stress tests, as well as the official release of Eternal Time Heroes. E.T.H. Access tokens operate as a voucher and the holder of the private key used to purchase in the portal owns the game account. Please retain access to your metamask seed phrase to prove beta access purchase.
+                        By using the portal to pre-order access to E.T.H. you will receive a beta access token and / or the portal conversion of a CryptoKitty. With an E.T.H. token, players will gain both access to the Beta builds / stress tests, as well as the official release of Eternal Time Heroes. E.T.H. Access tokens operate as a voucher and the holder of the token owns the game account. You may send your access token to a different account if you do not want to store it on the browser. Please retain access the Ethereum account that holds the QRT beta access token.
                         <br/><br/>
                         Pre-ordering also comes with a limited edition, legendary hero from one of E.T.H.’s original three timelines. Similarly, a portal conversion of a CryptoKitty comes with a moderately rare CryptoKitties-inspired grunt. But why choose between the two options when you can do both and start building your battle forces?
                         <br/><br/>
@@ -39,7 +39,8 @@ class Features extends Component {
                         <img src={elbrujo} />
                         <p>
                         El Brujo
-                        <br/><br/>
+                        </p>
+                        <p>
                         A true and tried master of the dark arts, El Brujo possesses exceptional magical powers that not only give him powerful attacks with damage dealt over time but also the noteable ability to self-heal. Not shabby for a 200 year old man.
                         </p>
                     </div>                    
@@ -47,7 +48,8 @@ class Features extends Component {
                         <img src={rowdy} />
                         <p>
                         Rowdy
-                        <br/><br/>
+                        </p>
+                        <p>
 What Rowdy lacks in size, she makes up in brains, agility and spunk. As a highly trained assassin with state of the arts weaponry and gear, she can melt down an opponent -- as long as she manages to stay on her feet.
 
                         </p>
@@ -56,7 +58,8 @@ What Rowdy lacks in size, she makes up in brains, agility and spunk. As a highly
                         <img src={bigboi} />
                         <p>
                         Big Boi
-                        <br/><br/>
+                        </p>
+                        <p>
 Big Boi is -- well, a big boy. A survivor of the apocalypse equipped with unorthodox attacks, he is not an opponent to underestimate. While he’s not exactly the most nimble hero, his durability is hard to match and his hits are definitely nothing to sneeze at.
 
                         </p>
@@ -69,7 +72,8 @@ Big Boi is -- well, a big boy. A survivor of the apocalypse equipped with unorth
                         <img src={bestia} />
                         <p>
                         Bestia
-                        <br/><br/>
+                        </p>
+                        <p>
                         
 Although summoned by witchcraft, Bestia’s skillset really lies in being a grumpy, stinky cat. He has a penchant for knocking objects over (and into opponents) and a breath that kills -- literally.
 
@@ -79,7 +83,8 @@ Although summoned by witchcraft, Bestia’s skillset really lies in being a grum
                         <img src={hank} />
                         <p>
                         Hank
-                        <br/><br/>
+                        </p>
+                        <p>
                         
 Pieced together in a cutting-edge laboratory, Hank is built to be a little walking killing machine. Equipped with taser-like nails and the ability to shoot laser beams, he has the potential to be a world-class soldier, as long as he doesn’t get distracted by snacks.
 
@@ -89,7 +94,8 @@ Pieced together in a cutting-edge laboratory, Hank is built to be a little walki
                         <img src={ruby} />
                         <p>
                         Ruby
-                        <br/><br/>
+                        </p>
+                        <p>
 Once a mild-mannered kitty, Ruby burned one of her nine lives, falling into a vat of radioactive waste some time during the apocalypse and morphed into a little hellion with newly evolved slashing speed, toxic projectile hairball vomits, and a chip on her shoulder.
 
                         </p>

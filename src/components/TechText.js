@@ -1,18 +1,17 @@
 import React, { Component } from 'react';
 
-import plasma from '../assets/EternalTimeHeroes_Plasma.png';
+import plasma from '../assets/EternalTimeHeroes_Plasma_Bk.png';
 
 class TechText extends Component {
     render() {
         return (
-            <div id='techtext'>
-                
+            <div className='techtext'>
                 <h1>FEE AND LATENCY REDUCTION</h1>
                     <p className='padding'>A core design goal of E.T.H. is to reduce the cost of interacting with the blockchain and avoid the same issues that other Ethereum games have presented in the past. Reducing "on-chain" transactions with "layer2" scalability solutions increases transaction throughput so players don't have to wait for miners to confirm their actions. To accomplish this, E.T.H. is built on top of the latest theory in Ethereum scalability research. </p>
                 <img src={plasma} />
                 <br/>
                 <div id='tech-trio'>
-                    <div className="tech-info-section">
+                <div className="tech-info-section">
                         <h2>State-Channels</h2>
                         <p>E.T.H. uses virtual channel systems to compute advanced turn-based logic. These state transitions ultimately settle to a winner-loser state. We use a form of force-push-moves to ensure that no party can stall or cheat a game inside the channel. </p>
                     </div>
