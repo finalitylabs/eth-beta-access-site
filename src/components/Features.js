@@ -122,13 +122,8 @@ Once a mild-mannered kitty, Ruby burned one of her nine lives, falling into a va
                 <div className='feature-bgs'>
                     <h2>Gameplay Demo Video </h2>
                     <Video className='feature-video' autoPlay loop muted
-                        controls={['PlayPause', 'Seek', 'Time', 'Volume', 'Fullscreen']}
-                        poster="http://sourceposter.jpg"
-                        onCanPlayThrough={() => {
-                            // Do stuff
-                        }}>
+                        controls={['PlayPause', 'Seek', 'Time', 'Volume', 'Fullscreen']}>
                         <source src={demVideo} type="video/mp4" />
-                        <track label="English" kind="subtitles" srcLang="en" src="http://source.vtt" default />
                     </Video>
                 </div>    
             </div>
