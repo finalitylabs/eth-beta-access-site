@@ -21,8 +21,8 @@ class LogoAnimation extends Component {
   render() {
     return (
         [
-            <img className={`logo ${!this.state.animationFinished ? "hide" : "show"}`} src={logo} alt='logo'/>,
-            <img className={`logo ${!this.state.animationFinished ? "show" : "hide"}`} src={logoAnimation} alt="animated ETH logo"/>
+            <img key={0} className={`logo ${!this.state.animationFinished ? "hide" : "show"}`} src={logo} alt='logo'/>,
+            <img key={1} className={`logo ${!this.state.animationFinished ? "show" : "hide"}`} src={logoAnimation} alt="animated ETH logo"/>
         ]
     );
   }
