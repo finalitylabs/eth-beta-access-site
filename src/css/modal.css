@@ -4,7 +4,7 @@
     height: 100vh;
     left: 0;
     top: 0;
-    z-index: 11;
+    z-index: 22;
     overflow: hidden;
 }
 
@@ -54,7 +54,7 @@
     opacity: 0.7;
     width: 100vw;
     height: 100vh;
-    z-index: 12;
+    z-index: 22;
 }
 
 @-webkit-keyframes wiggle {
@@ -82,4 +82,31 @@
     36% {-webkit-transform: rotate(-5deg);}
     48% {-webkit-transform: rotate(0deg);}
     100% {-webkit-transform: rotate(0deg);}
+}
+
+#terms-of-service.modal-container {
+    overflow: scroll;
+    height: 100vh;
+}
+#terms-of-service.modal-container .blackground {
+
+}
+
+
+#terms-of-service.modal-container .content{
+    width: 90%;
+    left: 5%;
+    height: 80vh;
+    top: 10vh;
+    overflow: scroll;
+}
+
+#terms-of-service.modal-container .content h2{
+    text-align: center;
+}
+#terms-of-service.modal-container .content p{
+    padding: 0 4%;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left!important;
 }
