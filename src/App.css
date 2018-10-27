@@ -133,7 +133,7 @@ h4 { font-weight:normal; }
   height: 100%;
   background: linear-gradient(#030011 ,#3e178c);
   z-index: 2;
-  
+  padding-bottom: 75px;
 }
 
 #synopsis h1 {
@@ -154,6 +154,10 @@ h4 { font-weight:normal; }
   padding-bottom: 75px;
 }
 
+.tech-image-text {
+  text-align: center!important;
+}
+
 .white-paper {
   display: flex;
   justify-content: space-around;
@@ -170,6 +174,8 @@ h4 { font-weight:normal; }
   color: white;
   padding-bottom: 100px;
 }
+
+
 
 .rarity-legend {
   padding-top: 40px;
@@ -243,7 +249,6 @@ h4 { font-weight:normal; }
 }
 
 .feature-desc p {
-  margin-top: 40px;
   padding: 0 12%;
   line-height: 28px;
   text-align: left;
@@ -303,6 +308,7 @@ h4 { font-weight:normal; }
   height: 100%;
   background: -webkit-linear-gradient(#030011, #3e178c);
   color: white;
+  padding-bottom: 75px;
   text-align: center;
 }
 
@@ -312,7 +318,6 @@ h4 { font-weight:normal; }
 
 .techtext h1 {
   padding-top: 75px;
-  padding-bottom: 20px;
 }
 
 .padding {
@@ -336,6 +341,7 @@ h4 { font-weight:normal; }
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  padding: 0 6%;
 }
 .tech-info-section {
   width: 30%;
@@ -392,7 +398,6 @@ h4 { font-weight:normal; }
 
 #roadmap h1 {
   padding-top: 30px;
-  padding-bottom: 5px;
   text-align: center;
 }
 
