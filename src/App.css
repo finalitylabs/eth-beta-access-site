@@ -103,7 +103,6 @@ h4 { font-weight:normal; }
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100vh;
   background: white;
   color: cyan;
   z-index: 1;
@@ -115,7 +114,6 @@ h4 { font-weight:normal; }
 }
 
 #herosplash .background-img {
-  height: 100vh;
   width: 100%;
 }
 
@@ -149,7 +147,7 @@ h4 { font-weight:normal; }
 #synopsis p {
   text-align: left; 
   line-height: 28px;
-  padding: 0 6%;
+  padding: 0 12%;
 }
 
 .synopsislastp {
@@ -240,16 +238,13 @@ h4 { font-weight:normal; }
   height: 100%;
 }
 
+.feature-desc h1 {
+  text-align: center;
+}
+
 .feature-desc p {
-<<<<<<< HEAD
   margin-top: 40px;
-  padding-left: 6%;
-  padding-right: 6%;
-=======
-  margin-top: 20px;
-  padding-left: 150px;
-  padding-right: 150px;
->>>>>>> b2675f1cd889eb2fc102cd9f527f9e4a4b8df6a2
+  padding: 0 12%;
   line-height: 28px;
   text-align: left;
 }
@@ -321,8 +316,8 @@ h4 { font-weight:normal; }
 }
 
 .padding {
-  padding-left: 6%;
-  padding-right: 6%;
+  padding-left: 12%;
+  padding-right: 12%;
 }
 
 .techtext img {
@@ -578,8 +573,9 @@ h4 { font-weight:normal; }
     margin: auto;
   }
   .feature-bgs img {
-    width: 100%;
-    height: auto;
+    width: 350px;
+    height: 200px;
+    margin: auto;
     padding: 0;
   }
   .feature-bg-imgs {
