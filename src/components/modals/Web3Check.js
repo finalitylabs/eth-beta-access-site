@@ -89,7 +89,7 @@ class Web3Check extends Component {
                     </div>
                     <div className={`metamask-installed ${this.state.mainnet ? "hide" : "show"}`}>
                         <div className="info-section">
-                            <h1>Please make sure you're connected to mainnet</h1>
+                            <h1>Please make sure you're connected to testnet (mainnet soon!)</h1>
                             <img src={connect_mainnet} alt="displaying how a selected mainnet should look" />
                         </div>
                     </div>
