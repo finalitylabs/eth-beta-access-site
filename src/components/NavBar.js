@@ -21,7 +21,7 @@ class NavBar extends Component {
             <div id='navbar'>
                 <img src={logo} alt='Finality Labs logo' />
                 <ul className="desktop-menu">
-                    <li><a href='#synopsis'>Synopsis</a></li>
+                    <li><a href='#synopsis'>Introduction</a></li>
                     <li><a href='#portal-main'>Portal</a></li>
                     <li><a href='#features'>Game Features</a></li>
                     <li><a href='#techtext'>Technical Info</a></li>                    
@@ -31,7 +31,7 @@ class NavBar extends Component {
                 
                 <img className="hamburger" src={hamburger} alt="hamburger menu icon" onClick={this.showMenu}/>
                 <ul className={`mobile-menu ${this.state.showMobileMenu ? 'show' : 'hide'}`}>
-                    <li><a href='#synopsis'>Synopsis</a></li>
+                    <li><a href='#synopsis'>Introduction</a></li>
                     <li><a href='#portal-main'>Portal</a></li>
                     <li><a href='#features'>Game Features</a></li>
                     <li><a href='#techtext'>Technical Info</a></li>                    
