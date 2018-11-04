@@ -48,7 +48,7 @@ class Social extends Component {
                 </div>
 
             </div>
-                    <p className="toggle-terms" onClick={this.toggleTermsOfService}>Terms of service</p>
+                    <p className="toggle-terms" onClick={this.toggleTermsOfService}>Terms of Service</p>
                     {this.state.showTerms ? <TermsOfService toggleTermsOfService={this.toggleTermsOfService} /> : null}
             </div>
         );

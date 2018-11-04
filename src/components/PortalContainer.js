@@ -48,8 +48,19 @@ class PortalContainer extends Component {
     render() {
         return (
             <div id="portal-main">
-                <h1 className="portal-header">BETA ACCESS PORTAL</h1>
-                <p className="portal-info">In order to gain presale access to E.T.H., you will need to either install MetaMask and fund your MetaMask wallet with 0.02 Ether (cost of the presale access) or find the CryptoKitty ID of a lazy kitty and input it into the ID number field (located directly above the number pad). Please see the console screen for further instructions.</p>
+                <h1 className="portal-header">TIME PORTAL</h1>
+                <p className="portal-info">
+                    Through the time portal below, you can do one (or both!) of the following:
+                    <br/>
+                    <br/>
+                    1). Buy access to one of the three limited-edition, legendary E.T.H. heroes by installing MetaMask, funding your MetaMask wallet with 0.2 Ether (cost of each hero) and purchasing a QRT token; or
+                    <br/>
+                    <br/>
+                    2). Transform a CryptoKitty that you own into a moderately-rare E.T.H. grunt of your choice by finding the CryptoKitties ID of that kitty and inputting it into the number field, located directly above the number pad on the console.
+                    <br/>
+                    <br/>
+                    Please refer to the console screen for more detailed instructions.
+                </p>
                 <div className="monitor">
                     <Web3Check />
                     <div className="remove-click-layer"/>
