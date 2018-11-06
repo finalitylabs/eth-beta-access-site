@@ -57,7 +57,7 @@ class Api extends Component {
 
   purchaseQRT(account) {
     return new Promise(resolve => {
-      this.eaInstance.purchaseQRTbeta({from: account, value: window.web3.toWei('0.1')}, (err, res) => {
+      this.eaInstance.purchaseQRT({from: account, value: window.web3.toWei('0.2')}, (err, res) => {
         resolve({"res": res})
       })
     })       
