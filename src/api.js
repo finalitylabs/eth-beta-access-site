@@ -4,8 +4,8 @@ import CK from './contracts/CKInterface.json';
 import Eth from 'ethjs';
 import { rejects } from 'assert';
 
-const eaAddress = '0x14f00c2c0f9c40476bbf8fcd1b2dc2e91e371041'
-const kittyAddress = '0x95ef2833688ee675dfc1350394619ae22b7667df'
+const eaAddress = '0x499b08a56d921ddf932bc78fe882134c4a1b0b87'
+const kittyAddress = '0x06012c8cf97bead5deae237070f9587f8e7a266d'
 
 class Api extends Component {
   constructor() {
